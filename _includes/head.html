@@ -9,15 +9,12 @@
   
   <link rel="stylesheet" href="{{ "/css/site.css" | prepend: site.baseurl }}">
   
+  {% if page.categories[0] == index %}<link rel="stylesheet" href="{{ "/css/index.css" | prepend: site.baseurl }}">{% endif %}
+  {% if page.categories[0] == blog %}<link href="{{ "/css/blog.css" | prepend: site.baseurl }}" rel="stylesheet" /> {% endif %}
+  {% if page.categories[0] == projects %}<link href="{{ "/css/projects.css"  | prepend: site.baseurl }}" rel="stylesheet" /> {% endif %}
+  {% if page.categories[0] == maze_2017 %}<link href="{{ "/css/maze_2017.css"  | prepend: site.baseurl }}" rel="stylesheet" /> {% endif %}
+  {% if page.categories[0] == sponsorship %}<link href="{{ "/css/sponsorship.css"  | prepend: site.baseurl }}" rel="stylesheet" /> {% endif %}
 
-  {% for category in page.categories %}
-    {% if category[0] == index %}<link rel="stylesheet" href="{{ "/css/index.css" | prepend: site.baseurl }}">{% endif %}
-    {% if category[0] == blog %}<link href="{{ "/css/blog.css" | prepend: site.baseurl }}" rel="stylesheet" /> {% endif %}
-		{% if category[0] == projects %}<link href="{{ "/css/projects.css"  | prepend: site.baseurl }}" rel="stylesheet" /> {% endif %}
-		{% if category[0] == maze_2017 %}<link href="{{ "/css/maze_2017.css"  | prepend: site.baseurl }}" rel="stylesheet" /> {% endif %}
-		{% if category[0] == sponsorship %}<link href="{{ "/css/sponsorship.css"  | prepend: site.baseurl }}" rel="stylesheet" /> {% endif %}
-
-  {% endfor %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   
