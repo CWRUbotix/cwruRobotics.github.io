@@ -1,0 +1,30 @@
+.roster {
+	vertical-align: text-top;
+	display: inline-block;
+	position: relative;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 0px;
+}
+
+.roster h1 {
+	font-size: 28px;
+	margin: 5px auto;
+	text-align: center
+}
+
+.roster p {
+	font-size: 16px;
+	margin: 5px auto;
+	text-align: center
+}
+
+.subteam_list {
+	max-width: 800px;
+	margin: 0 auto 40px auto;
+}
+
+#members {
+	width: 100%;
+	text-align: center;
+}

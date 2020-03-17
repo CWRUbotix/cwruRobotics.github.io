@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navbar.html %}
+    <a class="anchor" id="blog"></a>
+
+    <div id="blog_index">
+        <p class="hd">Blog</p>
+        <div class="division"></div>
+        <p style="font-size:24px;max-width:1200px;margin:0 auto 20px auto;text-align:center">
+            Recent Blog Posts
+        </p>
+        <div class="rec_blog_cont">
+            {{ content }}
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

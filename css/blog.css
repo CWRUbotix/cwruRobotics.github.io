@@ -1,0 +1,44 @@
+#blog {
+	text-align: center;
+	max-width: 90%;
+	margin: auto;
+}
+
+
+
+.blog_title {
+	text-align: center;
+	font-size: 36px;
+	max-width: 70%;
+	margin: 30px auto 40px auto;
+	font-weight: bold;
+}
+
+.blog_text {
+	text-align: left;
+	font-size: 20px;
+	max-width: 70%;
+	margin: 30px auto 40px auto;
+}
+
+.blog_section {
+	text-align: left;
+	font-size: 24px;
+	max-width: 70%;
+	margin: 30px auto 20px auto;
+	font-weight: bold;
+}
+
+.blog_caption {
+	text-align: left;
+	font-size: 20px;
+	max-width: 70%;
+	margin: 10px auto 40px auto;
+}
+
+.blog_author {
+	text-align: right;
+	font-size: 20px;
+	max-width: 70%;
+	margin: 10px auto 40px auto;
+}

@@ -1,0 +1,16 @@
+{% for post in site.posts %}
+    <div class="rec_blog">
+        <a href="{{post.url}}">
+            <p class="rec_blog_title" style="font-size: 24px">
+                {{post.title}}
+            </p>
+            <p class="rec_blog_date">
+                {{post.date.long_month}} {{post.date.i_day}}, {{post.date.year}}
+            </p>
+            <img src="{{post.imgurl}}">
+            <p class="rec_blog_text">
+                {{post.summary}}
+            </p>
+        </a>
+    </div>
+{% endfor %}
