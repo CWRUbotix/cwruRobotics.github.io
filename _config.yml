@@ -9,9 +9,9 @@
 title       : CWRUbotix
 description : The home of Case Western Reserve University's undergraduate robotics club.
 email       : robotics-exec@case.edu
-base        : "http://jekyll.cwrubotix.org" # the base hostname & protocol for use in the <base> html tag
+base        : "http://cwrubotix.org" # the base hostname & protocol for use in the <base> html tag
 baseurl     : "" # the subpath of your site, e.g. /blog
-url         : "http://jekyll.cwrubotix.org" # the base hostname & protocol for your site
+url         : "http://cwrubotix.org" # the base hostname & protocol for your site
 github_username : cwruRobotics
 twitter_username: cwrubotix
 # Build settings
