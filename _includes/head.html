@@ -9,12 +9,8 @@
   
   <link rel="stylesheet" href="{{ "/css/site.css" | prepend: site.baseurl }}">
   
-  {% for category in site.categories %}
-    {% for item in category[1] %}
-      {% if item.title == page.title %}
-  <link rel="stylesheet" href="/css/{{category[0]}}.css">
-      {% endif %}
-    {% endfor %}
+  {% for ss in page.stylesheets %}
+  <link rel="stylesheet" href="/css/{{ss}}.css">
   {% endfor %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
