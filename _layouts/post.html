@@ -13,10 +13,11 @@
     <div class="division"></div>
     {{ content }}
 
+    <!-- for date formatting, see: https://shopify.github.io/liquid/filters/date/ -->
     <p class="blog_author">
       {{page.author}}<br>
       {{page.author-role}}<br>
-      {{page.post-date}}
+      {{ page.date | date: "%B %d, %Y" }}
     </p>
   </div>
 

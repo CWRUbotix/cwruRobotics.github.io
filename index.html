@@ -123,16 +123,7 @@ stylesheets : [index]
 <div id="blog_index">
   <p class="hd">Blog</p>
   <div class="division"></div>
-  <div class="rec_blog_cont">
-    <div class="rec_blog">
-      <a class="rec_blog_link" href="/blogs.html">
-        <p class="rec_blog_title"></p>
-        <p class="rec_blog_date"></p>
-        <img class="rec_blog_img" src="/res/18-10-11-bootcamp/blog5_6.JPG"/>
-        <p class="rec_blog_text"></p>
-      </a>
-    </div>
-  </div>
+  {% include recent_blog_tile.html %}
   <div class="rec_blog_cont">
     <a href="/blogs.html">
       <p class="rec_blog_title">

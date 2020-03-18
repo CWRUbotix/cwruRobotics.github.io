@@ -1,0 +1,95 @@
+---
+layout      : default
+categories  : [nrc_project_2017]
+stylesheets : [projects, maze_2017]
+title       : CWRUbotix NRC Maze 2017
+subhead     : NRC Maze 2017
+imgurl      : res/nrc/nrc_17/maze.PNG
+---
+<div class="topspace"></div>
+<div id="project">
+    <img src="{{page.imgurl}}"/>
+    <p class="hd">{{page.subhead}}</p>
+    <div class="division"></div>
+    
+    <div class="info" style="font-size: 20px;">
+        <div id="quick-links">
+            <a href="proj/nrc_maze_17.html#in-action">Our Robot in Action</a> | <a href="proj/nrc_maze_17.html#mechanics">Mechanics</a> | <a href="proj/nrc_maze_17.html#sensing">Sensing the Walls</a> | <a href="proj/nrc_maze_17.html#software">Software</a> | <a href="proj/nrc_maze_17.html#competition_results">At Competition</a>
+        </div>
+
+    <h2 id="members">Members</h2>
+    <ul style="width:30%;display:inline-block;">
+        <li>Kate Carpenter</li>
+        <li>Jared Cassarly</li>
+        <li>Adam Cordingley</li>
+        <li>Zoe Mak</li>
+    </ul>
+    <ul style="width:30%;display:inline-block;">
+        <li><a href="mailto:jmm363@case.edu">Jonathan Mertz (Team Lead)</a></li>
+        <li>Andrea Norris</li>
+        <li>Maja Paar</li>
+        <li>Megan Robinson</li>
+    </ul>
+    
+    <h2 id="in-action">Our Robot in Action</h2>
+    <p>Videos are on our  <a href="https://www.youtube.com/channel/UCFxYzjLEY09YFLx_UKSINIw">YouTube channel</a>!</p>
+    <h2 id="mechanics">Mechanics</h2>
+    <div class="image" style="width:40%;float:right;">
+        <img src="res/nrc/nrc_17/sunny_iso_view.PNG" />
+        <div class="caption"><b>Figure 1</b>: Isometric view of our SolidWorks&reg; CAD model.</div>
+    </div>
+    <p>We chose to use omni-wheels because this would eliminate our need to turn our chassis 90 degrees at every turn. We built the chassis out of ¼&quot; plywood. This was a good choice, as it was light and easy to work with. We designed it in SolidWorks&reg; and laser-cut the parts. There was maybe 0.05-0.10 mm of play in the joints, but after we glued it up with PVA wood glue, this didn’t seem to be a problem.
+        <br /><br />
+        <h3>Performance of the Omni-Wheels</h3>
+        The omni-wheels worked as planned for the most part. One unforseen flaw, however, was that they were very poor at allowing Sunny to drive up the ramp. We aren't 100% sure why, but our best guess is this: the omni-wheels, by their nature, do not have a lot of surface area in contact with the ground. Furthermore, we think they don't all make even contact with the ground at the same time. This is normally manageable (on flat stretches or negative slopes). But on a ramp, the wheels experience lower friction due to being on a sloped surface. That, coupled with greater resistance due to gravity on the positive incline, is what we think causes this slippage when attempting to drive up the ramp.
+
+    </p>
+    <br />
+    <h2 id="sensing">Sensing the Walls</h2>
+    <h3>How it worked</h3>
+    <p>We chose to use 8 ultrasound sensors (<a href="http://www.micropik.com/PDF/HCSR04.pdf" target="_blank">HC-SR04</a>). We decided to use 8 because this would give our robot enough information to be able to keep parallel to the walls. We built a custom circuit to gather sensor data (more on this <a href="#the-circuit">below</a>).
+    <br />
+    <br />
+    HC-SR04’s are cheap -- we got them for $1.12 each. The alternative would be some type of infrared sensors, which tend to give unpredictable values when their beam doesn’t bounce off of something within range. For the onboard microcontroller, we chose to use an Arduino Mega because it has 8 Analog to Digital Converters (ADC’s). The Arduino Uno has only 6.
+    <br />
+    <br />
+    </p>
+    <h3 id="the-circuit">The Circuit</h3>
+
+    <div class="image" style="width:92%;">
+        <img src="res/nrc/nrc_17/Schematic_Sunny_sensors.svg" />
+        <div class="caption"><b>Figure 3</b>: A schematic of the circuitry for one set of sensors, drawn in <a href="http://www.easyeda.com" target="_blank">Easy EDA</a>. Our full circuit implemented two of these sets.</div>
+    </div>
+    <p>The operation of our circuit relies on 8 op-amps used as voltage buffers, 8 capacitors, and two (2) 4-input NOR-gates. The sensors are operated in two groups, in the following sequence. Group A is triggered, which causes the sensors to send out their ultrasonic pulses and begin waiting for a response. The processor checks in each loop for a positive logic signal from the NOR gate, which would indicate that all sensors have received a signal. Upon seeing a positive logic signal, it samples the output of the op-amp buffers for that group, then discharges the capacitors. This process always seems to take around 60 ms to complete. The process is then repeated for group B. Hence, updated sensor values can be guaranteed once every 0.12 seconds. By extension, the oldest a value can be is ~0.12 seconds. This seemed to be adaquate for our purposes. 
+    <br /> <br />
+    If we triggered and sampled all 8 at once, there would be interference between the sensors and we may never get accurate data. </p>
+    <div class="image" style="width:25%;display: inline-block;">
+        <img src="res/nrc/nrc_17/interference.png" />
+        <div class="caption"> Illustration of the interference we would have if we triggered all sensors simultaneously. </div>
+    </div>
+    <div class="image" style="width:50%;display: inline-block;">
+        <img src="res/nrc/nrc_17/two-groups.png" />
+        <div class="caption"> Diagram of the sensors operating in two groups. </div>
+    </div>	
+    <br />
+    <br />
+    <p>The function of the NOR gate is to monitor the storage capacitors. When all 4 sensors in the group have given a response pulse, the circuit gives a positive logic signal.
+    <br />
+    <br />
+    The circuit required more power than we expected. On the first test, we burned out the arduino’s built-in voltage regulator (rated for 800 mA) and had to add a beefier one so we could power everything.</p>
+    <div class="image" style="width:50%; margin-left:auto;margin-right: auto">
+        <img src="res/nrc/nrc_17/sunny_circuit_pre-voltage_reg.jpeg" />
+        <div class="caption"><b>Figure 2</b>: Our contructed sensor-sampling-circuit, pre-voltage-regulator.</div>
+    </div>
+
+    <h2 id="software">Software</h2>
+        <p>The software was a big part of this project. You can find code on the <a href="https://github.com/jcassarly/nrc_mazebot">github repo for the project</a>. </p>
+
+    </p>
+
+    <h2 id="competition_results">Performance at Competition</h2>
+        <p>Most robots, including Sunny, did not complete the maze. In our case, it was due to difficulties going up the ramp. It seemed that a competitive time was around 25 to 30 seconds. Videos of Sunny can be found on our <a href="https://www.youtube.com/channel/UCFxYzjLEY09YFLx_UKSINIw">youtube channel</a>. </p>
+    
+    </div>
+
+</div>

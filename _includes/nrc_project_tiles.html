@@ -1,0 +1,47 @@
+<p class="hd">2018</p>
+<div class="subproj_cont">
+{% for post in site.categories.nrc_project_2018 %}
+    <div class="subproj">
+        <a href="{{post.url}}">
+            <img src="{{post.imgurl}}"/>
+            <span class="subproj_txt"><b>{{post.subhead}}</b></span>
+        </a>
+    </div>
+{% endfor %}
+</div>
+
+<p class="hd">2017</p>
+<div class="subproj_cont">
+{% for post in site.categories.nrc_project_2017 %}
+    <div class="subproj">
+        <a href="{{post.url}}">
+            <img src="{{post.imgurl}}"/>
+            <span class="subproj_txt"><b>{{post.subhead}}</b></span>
+        </a>
+    </div>
+{% endfor %}
+</div>
+
+<p class="hd">2016</p>
+<div class="subproj_cont">
+{% for post in site.categories.nrc_project_2016 %}
+    <div class="subproj">
+        <a href="{{post.url}}">
+            <img src="{{post.imgurl}}"/>
+            <span class="subproj_txt"><b>{{post.subhead}}</b></span>
+        </a>
+    </div>
+{% endfor %}
+</div>
+
+<p class="hd">2015</p>
+<div class="subproj_cont">
+{% for post in site.categories.nrc_project_2015 %}
+    <div class="subproj">
+        <a href="{{post.url}}">
+            <img src="{{post.imgurl}}"/>
+            <span class="subproj_txt"><b>{{post.subhead}}</b></span>
+        </a>
+    </div>
+{% endfor %}
+</div>
