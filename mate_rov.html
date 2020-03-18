@@ -15,11 +15,13 @@ stylesheets : [projects]
     <p class="hd">Our Robots</p>
     <div class="division"></div>
     <div class="subproj_cont">
+        {% for post in site.categories.mate_rov_robot %}
         <div class="subproj">
-            <a href="proj/mate_rov_19.html">
-                <img src="res/mate_rov/mate_rov_2019.jpg"/>
-                <span class="subproj_txt"><b>2019</b></span>
+            <a href="{{post.url}}">
+                <img src="{{post.imgurl}}"/>
+                <span class="subproj_txt"><b>{{post.title}}</b></span>
             </a>
         </div>
+        {% endfor %}
     </div>
 </div>

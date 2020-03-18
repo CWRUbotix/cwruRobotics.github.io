@@ -15,40 +15,13 @@ stylesheets : [projects]
     <p class="hd">Our Robots</p>
     <div class="division"></div>
     <div class="subproj_cont">
+        {% for post in site.categories.nasa_robot %}
         <div class="subproj">
-            <a href="proj/nasa_rmc_18.html">
-                <img src="res/nasa_rmc/rmc_2018.png"/>
-                <span class="subproj_txt"><b>2018</b></span>
-        </div>
-        <div class="subproj">
-            <a href="proj/nasa_rmc_17.html">
-                <img src="res/nasa_rmc/rmc_2017.jpg"/>
-                <span class="subproj_txt"><b>2017</b></span>
+            <a href="{{post.url}}">
+                <img src="{{post.imgurl}}"/>
+                <span class="subproj_txt"><b>{{post.title}}</b></span>
             </a>
         </div>
-        <div class="subproj">
-            <a href="proj/nasa_rmc_16.html">
-                <img src="res/nasa_rmc/rmc_2016.png"/>
-                <span class="subproj_txt"><b>2016</b></span>
-            </a>
-        </div>
-        <div class="subproj">
-            <a href="proj/nasa_rmc_15.html">
-                <img src="res/nasa_rmc/rmc_2015.png"/>
-                <span class="subproj_txt"><b>2015</b></span>
-            </a>
-        </div>
-        <div class="subproj">
-            <a href="proj/nasa_rmc_14.html">
-                <img src="res/nasa_rmc/rmc_2014.png"/>
-                <span class="subproj_txt"><b>2014</b></span>
-            </a>
-        </div>
-        <div class="subproj">
-            <a href="proj/nasa_rmc_13.html">
-                <img src="res/nasa_rmc/rmc_2013.png"/>
-                <span class="subproj_txt"><b>2013</b></span>
-            </a>
-        </div>
+        {% endfor %}
     </div>
 </div>
