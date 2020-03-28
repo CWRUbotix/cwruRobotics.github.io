@@ -1,5 +1,6 @@
 ---
 layout: default
+stylesheets : [members]
 ---
 <div class="topspace"></div>
 
@@ -8,6 +9,13 @@ layout: default
     <p class="hd">Executive Board Biographies</p>
     <div class="division"></div>
     <p class="info">
-        Biographies from our executive board are forthcoming...
+        {% for member in site.data.members %}
+        <div class="member">
+            <img src="{{member.imgurl}}"/>
+            <p class="member-name">{{member.name}} - {{member.position}}</p>
+            <p class="bio">{{member.bio}}</p>
+        </div>
+        <br />
+        {% endfor %}
     </p>
 </div>

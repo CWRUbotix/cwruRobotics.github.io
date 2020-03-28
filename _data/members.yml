@@ -1,0 +1,48 @@
+- name: Andrea Norris
+  exec: true
+  position: President
+  email: adn33@case.edu
+  imgurl: res/members/Andrea.jpg
+  bio: Biography is forthcoming ...
+
+- name: Benjamin Voth
+  exec: true
+  position: Vice President
+  email: btv3@case.edu
+  imgurl: res/members/ben_voth.jpg
+  bio: Biography is forthcoming ...
+
+- name: Dominick Cardon
+  exec: true
+  position: Secretary
+  email: dxc504@case.edu
+  imgurl: res/members/dominick_cardon.png
+  bio: Biography is forthcoming ...
+
+- name: Jack Kindle
+  exec: true
+  position: Treasurer
+  email: jak312@case.edu
+  imgurl: res/members/Jack_Kindle.jpg
+  bio: Biography is forthcoming ...
+
+- name: Adam Cordingley
+  exec: true
+  position: Lab and Safety Manager
+  email: acc163@case.edu
+  imgurl: res/members/Adam.png
+  bio: Biography is forthcoming ...
+
+- name: Jackson White
+  exec: true
+  position: Public Relations
+  email: jsw112@case.edu
+  imgurl: res/members/Jackson.jpg
+  bio: Biography is forthcoming ...
+
+- name: Dr. Richard Bachmann
+  exec: true
+  position: Faculty Advisor
+  email: rjb3@case.edu
+  imgurl: res/members/Bachmann.jpg
+  bio: Biography is forthcoming ...

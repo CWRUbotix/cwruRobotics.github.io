@@ -1,0 +1,9 @@
+{% for member in site.data.members %}
+  <div class="member">
+    <a href="mailto:{{member.email}}">
+      <img src="{{member.imgurl}}"/>
+    </a>
+    <p>{{member.position}}</p>
+    <p>{{member.name}}</p>
+  </div>
+{% endfor %}
