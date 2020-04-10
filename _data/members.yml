@@ -1,8 +1,9 @@
-- name: Andrea Norris
+
+- name: Jack Kindle
   exec: true
   position: President
-  email: adn33@case.edu
-  imgurl: res/members/Andrea.jpg
+  email: jak312@case.edu
+  imgurl: res/members/Jack_Kindle.jpg
   bio: Biography is forthcoming ...
 
 - name: Benjamin Voth
@@ -12,32 +13,32 @@
   imgurl: res/members/ben_voth.jpg
   bio: Biography is forthcoming ...
 
-- name: Dominick Cardon
-  exec: true
-  position: Secretary
-  email: dxc504@case.edu
-  imgurl: res/members/dominick_cardon.png
-  bio: Biography is forthcoming ...
-
-- name: Jack Kindle
+- name: Aranya Kumar
   exec: true
   position: Treasurer
-  email: jak312@case.edu
-  imgurl: res/members/Jack_Kindle.jpg
+  email: axk1067@case.edu
+  imgurl: res/members/no_picture.jpg
   bio: Biography is forthcoming ...
 
-- name: Adam Cordingley
+- name: Julianna Carreras
   exec: true
-  position: Lab and Safety Manager
-  email: acc163@case.edu
-  imgurl: res/members/Adam.png
+  position: Secretary
+  email: jic23@case.edu
+  imgurl: res/members/julianna_carreras.jpg
   bio: Biography is forthcoming ...
 
-- name: Jackson White
+- name: Gillian Gervais
   exec: true
   position: Public Relations
-  email: jsw112@case.edu
-  imgurl: res/members/Jackson.jpg
+  email: geg51@case.edu
+  imgurl: res/members/no_picture.jpg
+  bio: Biography is forthcoming ...
+
+- name: Daniel Cui
+  exec: true
+  position: Lab and Safety Manager
+  email: daniel.cui@case.edu
+  imgurl: res/members/no_picture.jpg
   bio: Biography is forthcoming ...
 
 - name: Dr. Richard Bachmann
@@ -45,4 +46,32 @@
   position: Faculty Advisor
   email: rjb3@case.edu
   imgurl: res/members/Bachmann.jpg
+  bio: Biography is forthcoming ...
+
+- name: Andrea Norris
+  exec: false
+  position: 
+  email: adn33@case.edu
+  imgurl: res/members/Andrea.jpg
+  bio: Biography is forthcoming ...
+
+- name: Dominick Cardon
+  exec: false
+  position: 
+  email: dxc504@case.edu
+  imgurl: res/members/dominick_cardon.png
+  bio: Biography is forthcoming ...
+
+- name: Adam Cordingley
+  exec: false
+  position: 
+  email: acc163@case.edu
+  imgurl: res/members/Adam.png
+  bio: Biography is forthcoming ...
+
+- name: Jackson White
+  exec: false
+  position: Public Relations
+  email: jsw112@case.edu
+  imgurl: res/members/Jackson.jpg
   bio: Biography is forthcoming ...

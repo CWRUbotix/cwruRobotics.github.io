@@ -1,0 +1,99 @@
+---
+title       : CWRUbotix Bootcamp
+layout      : default
+categories  : [projects]
+stylesheets : [projects]
+---
+<div class="topspace"></div>
+<div id="project">
+    <img class="logo" src="res/bootcamp_full.png"/>
+    <p class="hd">Bootcamp</p>
+    <div class="division"></div>
+    <p class="info">
+        Every year, our club organizes and facilitates a robotics "bootcamp" where members form groups of 5-8 to tackle a small robotics design problems.  This program is an effort to improve our members' technical education, ensuring that everyone will be able to contribute effectively to our main projects and competitions regardless of prior knowledge.  We started this program in the Fall of 2016, and plan on continuing it for years to come.
+    </p>
+    <p class="hd">Our Robots</p>
+    <div class="division"></div>
+    <div class="subproj_cont">
+        {% for post in site.categories.bootcamp %}
+        <div class="subproj">
+            <a href="{{post.url}}">
+                <img src="{{post.imgurl}}"/>
+                <span class="subproj_txt"><b>{{post.title}}</b></span>
+            </a>
+        </div>
+        {% endfor %}
+        <div class="subproj">
+            <a href="proj/bootcamp_ballthrow_16.html">
+                <img src="res/bootcamp/2016/ball/thumb.png"/>
+                <span class="subproj_txt"><b>Ball Bot</b></span>
+            </a>
+        </div>
+        <div class="subproj">
+            <a href="proj/bootcamp_deal_16.html">
+                <img src="res/bootcamp/2016/deal/thumb.png"/>
+                <span class="subproj_txt"><b>Deal with it</b></span>
+            </a>
+        </div>
+        <div class="subproj">
+            <a href="proj/bootcamp_gund_16.html">
+                <img src="res/bootcamp/2016/gund/thumb.png"/>
+                <span class="subproj_txt"><b>Gund</b></span>
+            </a>
+        </div>
+        <div class="subproj">
+            <a href="proj/bootcamp_jump_16.html">
+                <img src="res/bootcamp/2016/jump/thumb.png"/>
+                <span class="subproj_txt"><b>Jumping Robot</b></span>
+            </a>
+        </div>
+        <div class="subproj">
+            <a href="proj/bootcamp_mech_16.html">
+                <img src="res/bootcamp/2016/mech/thumb.png"/>
+                <span class="subproj_txt"><b>Mech Magic</b></span>
+            </a>
+        </div>
+        <div class="subproj">
+            <a href="proj/bootcamp_mapping_16.html">
+                <img src="res/bootcamp/2016/mapping/thumb.png"/>
+                <span class="subproj_txt"><b>Mapping</b></span>
+            </a>
+        </div>
+        <div class="subproj">
+            <a href="proj/bootcamp_photovore_16.html">
+                <img src="res/bootcamp/2016/photovore/thumb.png"/>
+                <span class="subproj_txt"><b>Photovore</b></span>
+            </a>
+        </div>
+        <div class="subproj">
+            <a href="proj/bootcamp_arm_16.html">
+                <img src="res/bootcamp/2016/arm/thumb.png"/>
+                <span class="subproj_txt"><b>Robotic Arm</b></span>
+            </a>
+        </div>
+        <div class="subproj">
+            <a href="proj/bootcamp_scare_16.html">
+                <img src="res/bootcamp/2016/scare/thumb.png"/>
+                <span class="subproj_txt"><b>Scarier Bearier</b></span>
+            </a>
+        </div>
+        <div class="subproj">
+            <a href="proj/bootcamp_shoot_16.html">
+                <img src="res/bootcamp/2016/shoot/thumb.png"/>
+                <span class="subproj_txt"><b>Shoot Gun</b></span>
+            </a>
+        </div>
+        <div class="subproj">
+            <a href="proj/bootcamp_stair_16.html">
+                <img src="res/bootcamp/2016/stair/thumb.png"/>
+                <span class="subproj_txt"><b>Stair Bot</b></span>
+            </a>
+        </div>
+        <div class="subproj">
+            <a href="proj/bootcamp_taco_16.html">
+                <img src="res/bootcamp/2016/taco/thumb.png"/>
+                <span class="subproj_txt"><b>Taco Fingers</b></span>
+            </a>
+        </div>
+    </div>
+</div>
