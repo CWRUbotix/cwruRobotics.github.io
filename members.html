@@ -10,12 +10,14 @@ stylesheets : [members]
     <div class="division"></div>
     <p class="info">
         {% for member in site.data.members %}
+        {% if member.exec %}
         <div class="member">
             <img src="{{member.imgurl}}"/>
             <p class="member-name">{{member.name}} - {{member.position}}</p>
             <p class="bio">{{member.bio}}</p>
         </div>
         <br />
+        {% endif %}
         {% endfor %}
     </p>
 </div>

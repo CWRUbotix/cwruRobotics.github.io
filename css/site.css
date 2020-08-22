@@ -192,3 +192,24 @@ a.anchor {
 .dropdown:hover .dropdown-content {
 	display: block;
 }
+
+
+.code {
+	text-align: left;
+	max-width: 70%;
+	margin: 0px auto 0px auto;
+	padding: 1em;
+	font-size: 0.9em;
+	font-family: 'Lucidia Console', Monaco, monospace;
+	background-color: lightgray;
+	border-radius: 0.5em;
+}
+
+.code-inline {
+	display: inline;
+	font-size: 0.8em;
+	font-family: 'Lucidia Console', Monaco, monospace;
+	padding: 0.25em;
+	background-color: lightgray;
+	border-radius: 0.5em;
+}

@@ -42,7 +42,7 @@
   bio: Biography is forthcoming ...
 
 - name: Dr. Richard Bachmann
-  exec: true
+  exec: false
   position: Faculty Advisor
   email: rjb3@case.edu
   imgurl: res/members/Bachmann.jpg

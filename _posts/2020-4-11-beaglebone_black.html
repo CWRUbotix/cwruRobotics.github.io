@@ -1,0 +1,149 @@
+---
+layout      : post
+title       : "Beaglebone Black and ROS"
+categories  : [blog]
+stylesheets : [blog]
+subhead     : Our hardware team's work with running ROS on the beaglebone black
+summary     : Our hardware team's work with running ROS on the beaglebone black
+imgurl      : /res/nasa_rmc/bbb_ros.png
+author      : Adam Cordingley
+author-role : Hardware Technical Lead
+---
+<p class="blog_text">
+    This post is intended to be a tutorial on setting up and running ROS on the Beaglebone Black. It assumes some basic knowledge of linux.
+</p>
+
+<p class="blog_section">The Hardware</p>
+<p class="blog_subsection">Why Beaglebone Black and not Blue? Why not a Raspberry Pi?</p>
+    
+<p class="blog_text">
+    The bealgebone blue is nice, but it's features don't make a lot of sense for our use case. We need hardware that's more specialized for our application. We designed a board that neatly integrates digital I/O, an analog front-end, and a few odd sensors, as well as providing all power rails from a 12V input. 
+</p>
+<p class="blog_text">Compared to a raspberry pi, beaglebones have more GPIO, plus both their hardware and software is 
+completely open-source, which we like.</p>
+
+<p class="blog_section">Operating System and Initial Setup</p>
+<p class="blog_text">In this tutorial we'll be using Debian Buster. For the beaglebone, we'll use a a lightweight (IOT) OS that most notably omits graphics, which you can find <a href="https://beagleboard.org/latest-images" target="_blank">here</a>. We also chose to flash the OS to the onboard eMMC. See <a href="http://derekmolloy.ie/write-a-new-image-to-the-beaglebone-black/" target="_blank">this guide</a> on how to do this. </p>
+
+<p class="blog_text">
+    It's nice to make a new user that will do all the ros things (instead of using the default user). We'll call this user ros with password cwrubotix. You may need to log out and back in for the changes to take.
+</p>
+<p class="code">
+    ~ $ sudo adduser ros<br />
+    ~ $ sudo usermod -aG sudo ros<br />
+</p>
+
+<p class="blog_text">
+    Next, we wish to create our ros workspace on the external micro SD card so that we don't take up the limited onboard eMMC storage. We want the OS to mount the SD card on boot to a specified path (in our case, /home/ros). First you'll want to format and partition the SD card. I recommend ext4 formatting and unless you have special requirements, just go ahead and make the whole thing one partition. The SD card should show up as /dev/mmcblk0p1. Assuming this, add the following line to the /etc/fstab file.
+</p>
+<p class="code">
+    /dev/mmcblk0p1  /home/ros   ext4    nofail,rw   0   2
+</p>
+
+<!-- SETTING UP ROS ON THE BBB -->
+<p class="blog_section">Setting up ROS on the BBB</p>
+
+<p class="blog_text">
+    The process we used for setting up ROS on our Beaglebone was based on <a href="https://machinekoder.com/ros-with-debian-stretch-on-the-beaglebone-black-green-blue/" target="_blank">this post</a> by Machine Koder Consulting - much thanks to them. We need to make a few modifications however.
+</p>
+
+<p class="blog_subsection">Setup ROS repositories</p>
+<p class="blog_text">
+    Our first modification is made to the "Setup ROS repositories" step. Because we're using Debian Buster, we need to execute the following (note the change from "stretch" to "buster"):
+</p>
+<p class="code">
+    ~ $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu buster main" > /etc/apt/sources.list.d/ros-latest.list'<br />
+    ~ $ wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -O - | sudo apt-key add -<br />
+    ~ $ sudo apt-get update<br />
+    ~ $ sudo apt-get upgrade
+</p>
+
+<p class="blog_subsection">Preparing the ROS build</p>
+<p class="blog_text">
+    Next modification is made to the "Preparing the ROS build" step, where they say to execute this line:
+</p>
+<p class="code">~ $ rosinstall_generator ros_comm --rosdistro kinetic --deps --wet-only --exclude roslisp --tar > kinetic-ros_comm-wet.rosinstall</p>
+<p class="blog_text">We need to add <span class="code-inline">common_msgs</span> after <span class="code-inline">ros_comm</span> so that you have the following:</p>
+<p class="code">~ $ rosinstall_generator ros_comm common_msgs --rosdistro kinetic --deps --wet-only --exclude roslisp --tar > kinetic-ros_comm-wet.rosinstall</p>
+
+<p class="blog_subsection">Build ROS</p>
+<p class="blog_text">
+    Now, before you run the command in the "Build ROS" section, we need to apply a patch to rospack. In short, this is because we are installing on a non-supported operating system. A kind github user, jveitchmichaelis, has provided <a href="https://github.com/jveitchmichaelis/rospack">a patch for us to use</a>. So we're going to remove the existing rospack, and clone jveitchmichaelis's rospack:
+</p>
+<p class="code">
+    ~ $ rm -R ~/ros_catkin_ws/src/rospack<br />
+    ~ $ cd ~/ros_catkin_ws/src<br />
+    ~ $ git clone https://github.com/jveitchmichaelis/rospack.git
+</p>
+<p class="blog_text">
+    We also need to install another package before building ROS. Execute the following:
+</p>
+<p class="code">
+    ~ $ sudo apt-get install libtinyxml2-dev
+</p>
+<p class="blog_text">
+    Now proceed with the "Build ROS" section, noting that it will take a few hours on a beaglebone.
+</p>
+
+<p class="blog_section">Enabling CAN and SPIDEV</p>
+
+<p class="blog_text">With our hardware, we rely heavily on CAN bus and SPI bus. Fortunately the beaglebone has CAN and SPI controllers built in. The two steps to using them are first: enabling the device tree overlays, and second: configuring the GPIO pins.</p>
+
+<p class="blog_text">Add the following lines to /boot/uEnv.txt. Doing this will enable and disable the correct uboot overlays at boot time.</p>
+<p class="code">
+    capemgr.enable_partno=BB-CAN1<br />
+    capemgr.disable_partno=BB-BONELT-HDMI,BB-BONELT-HDMIN<br />
+    capemgr.enable_partno=BB-SPI1-01<br />
+</p>
+<p class="blog_text">After this, we still need to configure the GPIO pins, and we'd like it to happen on startup. I've found the easiest way to do this is a configuration script that will be started by systemd at boot time. First, we create the script:<span class="code-inline">~ $ sudo vim /usr/bin/config_pins.sh</span> and enter the following lines.</p>
+<p class="code">
+    #!/bin/bash<br />
+    config-pin p9.24 can<br />
+    config-pin p9.26 can<br />
+    config-pin p9.29 spi<br />
+    config-pin p9.30 spi<br />
+    config-pin p9.31 spi_sclk<br />
+</p>
+<p class="blog_text">
+    Next make the script executable with: <span class="code-inline">~ $ sudo chmod a+x /usr/bin/config_pins.sh</span>.</p>
+<p class="blog_text">
+    Now we need to setup the service configuration file: <span class="code-inline">~ $ sudo vim /lib/systemd/system/config_pins.service</span> and enter:
+</p>
+<p class="code">
+    [Unit]<br />
+    Description=Enable pin configuration at startup<br />
+    After=generic-board-startup.service<br />
+    <br />
+    [Service]<br />
+    Type=simple<br />
+    ExecStart=/usr/bin/config_pins.sh<br />
+    <br />
+    [Install]<br />
+    WantedBy=multi-user.target
+</p>
+<p class="blog_text">
+    Now we need to activate the new service.
+</p>
+<p class="code">
+    ~ $ sudo systemctl daemon-reload<br />
+    ~ $ sudo systemctl enable config_pins.service<br />
+    ~ $ sudo reboot
+</p>
+
+<p class="blog_section">ROS Setup Scripts</p>
+
+<p class="blog_text">
+When the launch file goes to start ROS nodes on the beaglebone, is will use SSH. So that means our .bashrc file will get run. It's useful to add a few things to this file.
+</p>
+<p class="code">
+    source /home/ros/ros_catkin_ws/devel/setup.bash<br />
+    source /home/ros/ros_setup.sh
+</p>
+<p class="blog_text">/home/ros/ros_setup.sh doesn't exist yet, so lets create that and enter the following:</p>
+<p class="code">
+    #!/bin/bash<br />
+    <br />
+    export ROS_MASTER_URI=http://192.168.7.1:11311<br />
+    export ROS_IP=192.168.7.2<br />
+    export ROS_LANG_DISABLE=genlisp:geneus:gennodejs
+</p>
