@@ -66,6 +66,14 @@ completely open-source, which we like.</p>
 <p class="blog_text">We need to add <span class="code-inline">common_msgs</span> after <span class="code-inline">ros_comm</span> so that you have the following:</p>
 <p class="code">~ $ rosinstall_generator ros_comm common_msgs --rosdistro kinetic --deps --wet-only --exclude roslisp --tar > kinetic-ros_comm-wet.rosinstall</p>
 
+<p class="blog_subsection">Install ROS dependencies</p>
+<p class="blog_text">
+    In this section, we need execute the following line instead to install dependencies for debian buster:
+</p>
+<p class="code">
+    ~ $ rosdep install --from-paths src --ignore-src --rosdistro kinetic -y -r --os=debian:buster
+</p>
+
 <p class="blog_subsection">Build ROS</p>
 <p class="blog_text">
     Now, before you run the command in the "Build ROS" section, we need to apply a patch to rospack. In short, this is because we are installing on a non-supported operating system. A kind github user, jveitchmichaelis, has provided <a href="https://github.com/jveitchmichaelis/rospack">a patch for us to use</a>. So we're going to remove the existing rospack, and clone jveitchmichaelis's rospack:
