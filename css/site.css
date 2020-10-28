@@ -16,6 +16,12 @@ a {
 	text-align: center;
 }
 
+.subhd {
+	font-size: 35px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
 a.anchor {
     display: block;
     position: relative;
