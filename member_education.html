@@ -1,17 +1,39 @@
 ---
 layout: default
+title: Education
+categories: [education]
+stylesheets: [projects]
 permalink: /education/
 ---
-<div id="member_education">
-    <h1 class="project_title">Member Eduction</h1>
-    <p>
-        To promote learning within our club, we
-    </p>
+<div class="topspace"></div>
 
-    <div id="workshops">
-        <h2 class="project_title">Programming & Design Workshops</h2>
-        <p>
-            Workshops
+<a class="anchor" id="lectures"></a>
+<div id="member_education">
+    <p class="hd">Member Education</p>
+    <div class="division"></div>
+
+    <div class="content">
+        <p class="info">
+            When possible, we ask experienced members to host lectures or workshops on topics related to the world of robotics. We try to record these lectures and post them on our <a href="https://www.youtube.com/channel/UCFxYzjLEY09YFLx_UKSINIw">Youtube channel</a> for anyone interested to view.
         </p>
+    </div>
+
+    <ul class="quicklinks">
+        <li><a href="{{page.url}}#hardware-lectures-2020-21">Hardware Lectures 2020-21</a></li>
+        <li><a href="{{page.url}}#playlists">Playlists</a></li>
+    </ul>
+
+    <p id="hardware-lectures-2020-21" class="hd">Hardware Lectures 2020-21</p>
+    <div class="division"></div>
+
+    <!-- LIST OF EMBEDDED HARDWARE LECTURE VIDEOS -->
+    {% include hardware_lecture_videos.html %}
+    <!-- END EMBEDDED HARDWARE LECTURE VIDEOS -->
+
+    <p id="playlists" class="hd">Playlists</p>
+    <div class="division"></div>
+    <div style="text-align:center;">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL4fKW-gzvCuZUq8QgD0FY6_R5ayc-e74B" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>

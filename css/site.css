@@ -219,3 +219,9 @@ a.anchor {
 	background-color: lightgray;
 	border-radius: 0.5em;
 }
+
+ul.quicklinks {
+	font-size: 1.5em;
+	width: 30%;
+	margin: 1em auto;
+}

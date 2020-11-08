@@ -1,0 +1,24 @@
+
+- title: Microcontrollers With CWRUbotix - Arduino and Beyond
+  description: Adam talks about microcontrollers, starting with the ever-popular Arduino then moving on to the STM32 family of microcontrollers. Adam discusses practical considerations when designing custom hardware involving microcontrollers.
+  category: hardware
+  date: Sept. 19, 2020
+  youtube_id: hBfh2LPobl0
+
+- title: Altium With CWRUbotix - Intro to Altium 2020-10-17
+  description: Adam introduces Altium Designer, starting with some basic schematic capture, then moving on to board setup. Adam covers basic design rule generation and adjustment, board shape definition, via sizes, and begins discussion of layout and routing considerations.
+  category: hardware
+  date: Oct. 14, 2020
+  youtube_id: KYb4QV5yzxU
+
+- title: CWRUbotix Hardware Lecture - Diodes, BJT's, MOSFET's
+  description: Adam talks about the basics of diodes, BJT's, and MOSFET's, focusing on the general concepts of their construction and practical descriptions of their functions and uses.
+  category: hardware
+  date: Oct. 31, 2020
+  youtube_id: EZr4c4QQc6I
+
+- title: CWRUbotix Hardware Lecture - Op-Amps & Comparators
+  description: In this lecture, Adam covers the basics of Op-Amps and Comparators. He starts with the fundamental behavior of op-amps and the basic assumptions we make about their operation. Next he discusses the importance of negative feedback in constructing op-amp circuits and dives into fundamental op-amp circuit topologies. Adam ends with talking about comparators and introduces the concept of positive feedback and hysteresis.
+  category: hardware
+  date: Nov. 7, 2020
+  youtube_id: zIlzWF2PTkk
