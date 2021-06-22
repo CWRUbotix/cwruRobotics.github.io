@@ -13,19 +13,19 @@
   imgurl: res/members/Julianna_Carreras.png
   bio: I'm an incoming sophomore in Mechanical Engineering. I've been on CWRUbotix for 3 years (I took a gap year because of COVID) on the MATE ROV mechanical team and I previously was the secretary for 1 1/2 years. Aside from robotics, I'm very passionate about efficient and renewable energy-mainly windmills.
 
-- name: Zach Baldwin
-  exec: true
-  position: Treasurer
-  email: ztb11@case.edu
-  imgurl: res/members/Zachary_Baldwin.jpg
-  bio: Zach Baldwin is a Junior studying Computer Engineering. He is currently in his third year as a member in CWRUBotix where he has been on the NRC Micro Mouse and NASA Lunabotix competition teams. Outside of school and robotics, he runs, plays trumpet, and loves working on 8-bit computers.
-
 - name: Nathan Hsiao
   exec: true
   position: Secretary
   email: nnh12@case.edu 
   imgurl: res/members/Nathan_Hsiao.png
   bio: Hi! I'm studying electrical engineering, and I also compete on the hardware team for the NASA Robot Mining Competition. I love music (I play violin) and sports (just about anything— frisbee, basketball, ping pong, and soccer)!
+
+- name: Zach Baldwin
+  exec: true
+  position: Treasurer
+  email: ztb11@case.edu
+  imgurl: res/members/Zachary_Baldwin.jpg
+  bio: Zach Baldwin is a Junior studying Computer Engineering. He is currently in his third year as a member in CWRUBotix where he has been on the NRC Micro Mouse and NASA Lunabotix competition teams. Outside of school and robotics, he runs, plays trumpet, and loves working on 8-bit computers.
 
 - name: Georgia Martinez
   exec: true
