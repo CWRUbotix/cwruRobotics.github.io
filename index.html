@@ -1,6 +1,6 @@
 ---
 layout      : default
-title       : "Home"
+title       : "CWRUbotix — Home"
 categories  : [index]
 stylesheets : [index]
 ---
@@ -32,7 +32,7 @@ stylesheets : [index]
   <div class="division" style="margin-bottom:30px"></div>
   <div class="exec_board_cont">
     {% include member_tiles.html %}
-    
+
     <p style="font-size:24px;max-width:1200px;margin:0 auto 70px auto;">
     Learn more about our executive board <a href="members.html#exec">here</a>.
     </p>
@@ -93,101 +93,14 @@ stylesheets : [index]
   <div class="division"></div>
   <div class="sponsors_cont">
 
+    {% for sponsor in site.data.sponsors %}
     <div class="sponsor">
-      <a href="https://www.casealum.org/" target="_blank">
-        <img style="width: 300px;" src="res/sponsors/caa.svg"/>
+      <a href="{{sponsor.link}}" target="_blank">
+        <img style="width: 300px;" src="{{sponsor.image}}" alt="{{sponsor.alt}}">
       </a>
     </div>
-    
-    <!--Kennamental-->
-    
-    <div class="sponsor">
-      <a href="https://www.kyocera-sgstool.com/" target="_blank">
-        <img style="max-width: 1000px;" src="res/sponsors/kyocera_sgs.png"/>
-      </a>
-    </div>
-    
-    <!--Gene Haas Grant,-->
-    
-    <div class="sponsor">
-      <a href="http://thinkbox.case.edu" target="_blank">
-        <img style="width: 400px;" src="res/sponsors/thinkbox.svg"/>
-      </a>
-    </div>
+    {% endfor %}
 
-    <div class="sponsor">
-      <a href="http://usg.case.edu" target="_blank">
-        <img style="max-width: 300px;" src="res/sponsors/usg.png"/>
-      </a>
-    </div>
-    
-    <div class="sponsor">
-      <a href="http://www.solidworks.com/" target="_blank">
-        <img style="width: 400px;" src="res/sponsors/solidworks.svg"/>
-      </a>
-    </div>
-    
-    <div class="sponsor">
-      <a href="http://altium.com" target="_blank">
-        <img style="max-width: 400px;" src="res/sponsors/altium.png"/>
-      </a>
-    </div>
-
-    <!--Sandvik Coromat-->
-    
-    <div class="sponsor">
-      <a href="http://fifthaxis.com/new.fifthaxis.com/wordpress/" target="_blank">
-        <img style="max-width: 500px;" src="res/sponsors/5th_axis_logo.png"/>
-      </a>
-    </div>
-
-    <div class="sponsor">
-      <a href="http://www.helicaltool.com/" target="_blank">
-        <img style="max-width: 500px;" src="res/sponsors/helical_notag_4c.png"/>
-      </a>
-    </div>
-
-    <div class="sponsor">
-      <a href="http://www.aetnaplastics.com/" target="_blank">
-        <img style="width: 300px;" src="res/sponsors/aetna.svg"/>
-      </a>
-    </div>
-    
-    <div class="sponsor">
-      <a href="https://www.protocase.com/" target="_blank">
-        <img style="width: 300px;" src="res/sponsors/protocase.png"/>
-      </a>
-    </div>
-    
-    <div class="sponsor">
-      <a href="http://www.jergensinc.com/" target="_blank">
-        <img style="width: 300px;" src="res/sponsors/Jergens.png"/>
-      </a>
-    </div>
-
-    <div class="sponsor">
-      <a href="https://garrtool.com" target="_blank">
-        <img style="max-width: 500px;" src="res/sponsors/garr_tool.png"/>
-      </a>
-    </div>
-
-    <div class="sponsor">
-      <a href="https://www.makergear.com/" target="_blank">
-        <img style="max-width: 500px;" src="res/sponsors/makergear_logo.jpg"/>
-      </a>
-    </div>
-
-    <!--Haimer-->
-    
-    <!--Ma Ford-->
-    
-    <!--Viking Drill-->
-
-    <div class="sponsor">
-      <a href="http://case.edu" target="_blank">
-        <img style="max-width: 600px;" src="res/sponsors/cwru.png"/>
-      </a>
-    </div>
   </div>
   <a class="btn" href="sponsorship.html">
     Interested in sponsoring?
