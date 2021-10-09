@@ -10,7 +10,7 @@ title       : CWRUbotix
 description : The home of Case Western Reserve University's undergraduate robotics club.
 email       : robotics-exec@case.edu
 baseurl     : "" # the subpath of your site, e.g. /blog
-url         : "https://cwrubotix.org" # the base hostname & protocol for your site
+url         : "https://www.cwrubotix.org" # the base hostname & protocol for your site
 github_username : cwruRobotics
 twitter_username: cwrubotix
 # Build settings
