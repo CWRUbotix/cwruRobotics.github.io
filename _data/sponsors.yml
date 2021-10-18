@@ -37,3 +37,18 @@
   link: https://www.makergear.com/
   image: res/sponsors/makergear_logo.jpg
   alt: MakerGear logo
+
+- name: M.A. Ford
+  link: https://maford.com
+  image: res/sponsors/ma-ford-logo.png
+  alt: M.A. Ford Logo
+
+- name: SBG Systems
+  link: https://www.sbg-systems.com
+  image: res/sponsors/sbg_logo.svg
+  alt: SBG Systems Logo
+  
+# - name: Mitee Bite
+#   link: https://www.miteebite.com
+#   image: res/sponsors/miteebite.jpg
+#   alt: Mitee Bite Products LLC. Logo
