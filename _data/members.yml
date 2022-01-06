@@ -16,7 +16,7 @@
 - name: Nathan Hsiao
   exec: true
   position: Secretary
-  email: nnh12@case.edu 
+  email: nnh12@case.edu
   imgurl: res/members/Nathan_Hsiao.png
   bio: Hi! I'm studying electrical engineering, and I also compete on the hardware team for the NASA Robot Mining Competition. I love music (I play violin) and sports (just about anything— frisbee, basketball, ping pong, and soccer)!
 
@@ -34,9 +34,16 @@
   imgurl: res/members/Georgia_Martinez.jpeg
   bio: Oh hey didn't see ya there. I'm a sophomore studying computer science, and this is my second year on the MATE ROV software team. Outside of robotics, I've been playing the euphonium for nine years. You can find me playing in Symphonic Winds and marching band.
 
-- name: Daniel Cui
+- name: Michael Carlstrom
   exec: true
   position: Lab and Safety Manager
+  email: rmc170@case.edu
+  imgurl: res/members/michael_carlstrom.png
+  bio:
+
+- name: Daniel Cui
+  exec: false
+  position:
   email: daniel.cui@case.edu
   imgurl: res/members/daniel_cui.jpg
   bio: Third year mechanical engineering major, NASA RMC deposition subsystem lead. I'm about to be 21 and I still build LEGO.
@@ -50,21 +57,21 @@
 
 - name: Andrea Norris
   exec: false
-  position: 
+  position:
   email: adn33@case.edu
   imgurl: res/members/Andrea.jpg
   bio: Biography is forthcoming ...
 
 - name: Dominick Cardon
   exec: false
-  position: 
+  position:
   email: dxc504@case.edu
   imgurl: res/members/dominick_cardon.png
   bio: Biography is forthcoming ...
 
 - name: Adam Cordingley
   exec: false
-  position: 
+  position:
   email: acc163@case.edu
   imgurl: res/members/Adam.png
   bio: Biography is forthcoming ...
