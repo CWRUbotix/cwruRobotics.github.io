@@ -25,7 +25,7 @@
   position: Treasurer
   email: ztb11@case.edu
   imgurl: res/members/Zachary_Baldwin.jpg
-  bio: Zach Baldwin is a Junior studying Computer Engineering. He is currently in his third year as a member in CWRUBotix where he has been on the NRC Micro Mouse and NASA Lunabotix competition teams. Outside of school and robotics, he runs, plays trumpet, and loves working on 8-bit computers.
+  bio: Zach Baldwin is a Junior studying Computer Engineering. He is currently in his third year as a member in CWRUBotix where he is the lead for the Micromouse team and a hardware designer on the NASA Lunabotics competition team. Outside of school and robotics, he runs, plays trumpet, and loves working on 8-bit computers.
 
 - name: Georgia Martinez
   exec: true
@@ -39,7 +39,7 @@
   position: Lab and Safety Manager
   email: rmc170@case.edu
   imgurl: res/members/michael_carlstrom.png
-  bio:
+  bio: I’m a sophomore studying Computer Science with a specialization in Artificial Intelligence. This year I was promoted to lead the NASA RMC software team. While I am not in the robotics bay, I am found playing card and board games.
 
 - name: Daniel Cui
   exec: false
