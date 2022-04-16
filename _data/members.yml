@@ -27,11 +27,11 @@
   bio: Hi! I’m an incoming sophomore, and this will be my second year on the MATE ROV and NRC Micromouse teams. I am studying mechanical engineering, and I also like computer science and physics. My favorite pastimes are Ultimate Frisbee and music. I have played alto saxophone for ten years, and I love listening to jazz, classic rock, and musical theater.
 
 - name: Robin James
-  exec: false
+  exec: true
   position: Lab and Safety Manager
   email: Rnj13@case.edu
-  imgurl: res/members/
-  bio: 
+  imgurl: res/members/robin_james_l&s.JPG
+  bio: Hi, I am Robin, a raising junior physics and computer science major. As well as being on the Robotics team for the past 3 years, I also do research in the development of cosmic ray detection.
 
 - name: Liv Gatchall
   exec: false
