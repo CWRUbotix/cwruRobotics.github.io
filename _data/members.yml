@@ -1,52 +1,44 @@
-
-- name: Aranya Kumar
-  exec: true
-  position: President
-  email: axk1067@case.edu
-  imgurl: res/members/Aranya_Kumar.jpeg
-  bio: Hi! I am a fourth year student pursuing majors in Computer Science and Physics and a minor in Astronomy. I have been a part of the MATE ROV team for four years now in the software sub team. I also dance for Case CobRAAS and watch a "healthy" amount of Netflix.
-
 - name: Julianna Carreras
   exec: true
-  position: Vice President
+  position: President
   email: jic23@case.edu
-  imgurl: res/members/Julianna_Carreras_President.jpg
-  bio: I'm an incoming sophomore in Mechanical Engineering. I've been on CWRUbotix for 3 years (I took a gap year because of COVID) on the MATE ROV mechanical team and I previously was the secretary for 1 1/2 years. Aside from robotics, I'm very passionate about efficient and renewable energy-mainly windmills.
-
-- name: Nathan Hsiao
-  exec: true
-  position: Secretary
-  email: nnh12@case.edu
-  imgurl: res/members/Nathan_Hsiao.png
-  bio: Hi! I'm studying electrical engineering, and I also compete on the hardware team for the NASA Robot Mining Competition. I love music (I play violin) and sports (just about anything— frisbee, basketball, ping pong, and soccer)!
-
-- name: Zach Baldwin
-  exec: true
-  position: Treasurer
-  email: ztb11@case.edu
-  imgurl: res/members/Zachary_Baldwin.jpg
-  bio: Zach Baldwin is a Junior studying Computer Engineering. He is currently in his third year as a member in CWRUBotix where he is the lead for the Micromouse team and a hardware designer on the NASA Lunabotics competition team. Outside of school and robotics, he runs, plays trumpet, and loves working on 8-bit computers.
-
-- name: Georgia Martinez
-  exec: true
-  position: Public Relations
-  email: gcm49@case.edu
-  imgurl: res/members/Georgia_Martinez.jpeg
-  bio: Oh hey didn't see ya there. I'm a sophomore studying computer science, and this is my second year on the MATE ROV software team. Outside of robotics, I've been playing the euphonium for nine years. You can find me playing in Symphonic Winds and marching band.
+  imgurl: res/members/JuliannaCarrerasPresident.jpg
+  bio: Hello, I'm a junior majoring in Mechanical Engineering. I've been on CWRUbotix for about 4 years on the MATE ROV mechanical team. I previously was the secretary for 1 1/2 years and vice president for a year. Aside from robotics, I'm very passionate about efficient and renewable energy-mainly windmills.
 
 - name: Michael Carlstrom
   exec: true
-  position: Lab and Safety Manager
+  position: Vice President
   email: rmc170@case.edu
   imgurl: res/members/michael_carlstrom.png
-  bio: I’m a sophomore studying Computer Science with a specialization in Artificial Intelligence. This year I was promoted to lead the NASA RMC software team. While I am not in the robotics bay, I am found playing card and board games.
+  bio: I’m a junior studying Computer Science with a specialization in Artificial Intelligence. While I am not in the robotics bay, I am found playing card and board games.
 
-- name: Daniel Cui
+- name: Soontm
   exec: false
-  position:
-  email: daniel.cui@case.edu
-  imgurl: res/members/daniel_cui.jpg
-  bio: Third year mechanical engineering major, NASA RMC deposition subsystem lead. I'm about to be 21 and I still build LEGO.
+  position: Secretary
+  email: 
+  imgurl: res/members/
+  bio: 
+
+- name: Abby Morse
+  exec: true
+  position: Treasurer
+  email: axm1554@case.edu
+  imgurl: res/members/Abby_Morse_Treasurer.JPG
+  bio: Hi! I’m an incoming sophomore, and this will be my second year on the MATE ROV and NRC Micromouse teams. I am studying mechanical engineering, and I also like computer science and physics. My favorite pastimes are Ultimate Frisbee and music. I have played alto saxophone for ten years, and I love listening to jazz, classic rock, and musical theater.
+
+- name: Robin James
+  exec: false
+  position: Lab and Safety Manager
+  email: Rnj13@case.edu
+  imgurl: res/members/
+  bio: 
+
+- name: Liv Gatchall
+  exec: false
+  position: Public Relations
+  email: org6@case.edu
+  imgurl: res/members/
+  bio: 
 
 - name: Dr. Richard Bachmann
   exec: false
@@ -55,30 +47,4 @@
   imgurl: res/members/Bachmann.jpg
   bio: Biography is forthcoming ...
 
-- name: Andrea Norris
-  exec: false
-  position:
-  email: adn33@case.edu
-  imgurl: res/members/Andrea.jpg
-  bio: Biography is forthcoming ...
 
-- name: Dominick Cardon
-  exec: false
-  position:
-  email: dxc504@case.edu
-  imgurl: res/members/dominick_cardon.png
-  bio: Biography is forthcoming ...
-
-- name: Adam Cordingley
-  exec: false
-  position:
-  email: acc163@case.edu
-  imgurl: res/members/Adam.png
-  bio: Biography is forthcoming ...
-
-- name: Jackson White
-  exec: false
-  position: Public Relations
-  email: jsw112@case.edu
-  imgurl: res/members/Jackson.jpg
-  bio: Biography is forthcoming ...
