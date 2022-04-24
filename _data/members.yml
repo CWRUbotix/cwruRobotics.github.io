@@ -12,12 +12,12 @@
   imgurl: res/members/michael_carlstrom.png
   bio: I’m a junior studying Computer Science with a specialization in Artificial Intelligence. While I am not in the robotics bay, I am found playing card and board games.
 
-- name: Soontm
-  exec: false
+- name: Noah Mollerstuen
+  exec: true
   position: Secretary
-  email: 
-  imgurl: res/members/
-  bio: 
+  email: nrm98@case.edu
+  imgurl: res/members/Noah.jpg
+  bio: Hi, I'm a sophomore studying computer science and control engineering. In addition to my work as secretary, I serve as team lead of the MATE ROV team. When I'm not building robots, I enjoy playing board games and cross-country skiing.
 
 - name: Abby Morse
   exec: true
@@ -31,14 +31,14 @@
   position: Lab and Safety Manager
   email: Rnj13@case.edu
   imgurl: res/members/robin_james_l&s.JPG
-  bio: Hi, I am Robin, a raising junior physics and computer science major. As well as being on the Robotics team for the past 3 years, I also do research in the development of cosmic ray detection.
+  bio: Hi, I am Robin, a rising junior physics and computer science major. As well as being on the Robotics team for the past 3 years, I also do research in the development of cosmic ray detection.
 
 - name: Liv Gatchall
-  exec: false
+  exec: true
   position: Public Relations
   email: org6@case.edu
-  imgurl: res/members/
-  bio: 
+  imgurl: res/members/liv_PR.jpg
+  bio: Hello! :) I'm a third-year mechanical engineering student. This year will be my second year on the MATE ROV mechanical team. Outside of robotics, I play guitar and pet a lot of dogs.
 
 - name: Dr. Richard Bachmann
   exec: false
