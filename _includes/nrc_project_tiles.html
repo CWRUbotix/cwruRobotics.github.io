@@ -1,3 +1,15 @@
+<p class="hd">2022</p>
+<div class="subproj_cont">
+{% for post in site.categories.nrc_project_2022 %}
+    <div class="subproj">
+        <a href="{{post.url}}">
+            <img src="{{post.imgurl}}"/>
+            <span class="subproj_txt"><b>{{post.subhead}}</b></span>
+        </a>
+    </div>
+{% endfor %}
+</div>
+
 <p class="hd">2018</p>
 <div class="subproj_cont">
 {% for post in site.categories.nrc_project_2018 %}
