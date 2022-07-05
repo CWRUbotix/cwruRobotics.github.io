@@ -1,5 +1,4 @@
 {% for video in site.data.videos %}
-    {% if video.category == "hardware" %}
         <div style="text-align:center;">
             <p class="subhd">{{video.date}}</p>
             <div>
@@ -8,6 +7,5 @@
                 <p style="display: inline-block; width: 30%; vertical-align: top; margin: 0 2%; text-align: left; font-size: 1.25em;">{{video.description}}</p>
             </div>
         </div>
-    {% endif %}
 
 {% endfor %}

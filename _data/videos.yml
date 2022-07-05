@@ -1,4 +1,96 @@
 
+
+- title: Planetary Gearbox Lecture
+  description: In this video, Benjamin Voth explains how planetary gearboxes work and how to implement them.
+  category: mechanical
+  date: April 25, 2022
+  youtube_id: BW7pp0uCKa0
+
+- title: Altium PCB Librarian Workshop
+  description: Hardware technical lead Adam Cordingley gives us a run-down on Altium library management, including creating schematic symbols and PCB footprints.
+  category: hardware
+  date: March 6, 2022
+  youtube_id: 9zkMr07LmOY
+
+- title: Altium Workshop - Nov 6, 2021
+  description: Zoom recording from our Altium workshop on Nov 6, 2021. Hosted by Adam Cordingley.
+  category: hardware
+  date: Nov 6, 2021
+  youtube_id: SX_sYJq9RkE
+
+- title: Advanced Op Amp Circuits - CWRUbotix Hardware Lecture
+  description: In this lecture, hardware technical lead Adam Cordingley talks about using op amps in demanding measurement applications. 
+  category: hardware
+  date: Apr 7, 2021
+  youtube_id: YUB0fuyyW8w
+
+- title: Time Management - CWRUbotix Leadership Lecture
+  description: In this week's leadership lecture, Robert shares some techniques for time management when working on a project.
+  category: leadership
+  date: Mar 30, 2021
+  youtube_id: XGYZQ837vWg
+
+- title: Intro to OpenCV - CWRUbotix Software Lecture
+  description: This week, we premiere the first software lecture of the year as Ryan presents an introduction to OpenCV. Specifically, we look at an example problem based on a MATE ROV task from two years ago, and how to apply and use OpenCV to solve it.
+  category: software
+  date: Mar 21, 2021
+  youtube_id: YFbQV5Ds_xs
+
+- title: Technical Decision Making - CWRUbotix Leadership Lecture
+  description: In this week's leadership lecture, Robert explains various tools, techniques, and considerations for decision making when working on a project.
+  category: leadership
+  date: Mar 8, 2021
+  youtube_id: YEmknuESy7s
+
+- title: Getting Started with HSMWorks - CWRUbotix Hardware Lecture
+  description: In this mechanical lecture, Jackson walks us through the basics of HSMWorks, showing us some fundamental machining operations and how to correctly use them.
+  category: mechanical
+  date: Feb 28, 2021
+  youtube_id: zO9NmmnIjZ4
+
+- title: CWRUbotix Hardware Lecture - Flow Charts and Embedded Program Planning
+  description: In this week's lecture, Adam covers tools and techniques for planning programs for embedded systems, including flow charts, state machines, and more.
+  category: hardware
+  date: Feb 20, 2021
+  youtube_id: 6JOCorkOeQ8
+
+- title: CWRUbotix Leadership Lecture - Team and Project Management
+  description: In this leadership lecture, CWRUbotix president Jack, MATE ROV lead Peter, and NASA RMC lead Robert discuss strategies and best practices for management of project teams.
+  category: leadership
+  date: Feb 14, 2021
+  youtube_id: aYlTnfW3b0U
+
+- title: Simple Altium Layout Tutorial
+  description: In this video, hardware technical lead Adam Cordingley walks through the process of laying out a simple 4-layer board in Altium Designer.
+  category: hardware
+  date: Feb 3, 2021
+  youtube_id: N6WyqZDpTgM
+
+- title: Power Supply Crash Course - CWRUbotix Hardware Lecture
+  description: In this hardware lecture, hardware technical lead Adam Cordingley covers the basics of several common power supply architectures.
+  category: hardware
+  date: Nov 14, 2020
+  youtube_id: 0Zh3Lkq-jqw
+
+
+- title: CWRUbotix Hardware Lecture - Op-Amps & Comparators
+  description: In this installment in our Circuits Basics lecture series, our hardware technical lead Adam Cordingley talks about the basics of op-amps and comparators.
+  category: hardware
+  date: Nov 8, 2020
+  youtube_id: zIlzWF2PTkk
+
+- title: CWRUbotix Hardware Lecture - Diodes, BJT's, MOSFET's
+  description: In this lecture, Hardware Technical Lead Adam Cordingley talks about the basics of diodes, BJT's, and MOSFET's.
+  category: hardware
+  date: Nov 5, 2020
+  youtube_id: EZr4c4QQc6I
+
+- title: Altium With CWRUbotix - Intro to Altium 2020-10-17
+  description: Our Hardware Technical Lead Adam Cordingley leads a workshop on the basics of using Altium Designer, covering schematic capture, board setup, and editing design rules.
+  category: hardware
+  date: Oct 18, 2020
+  youtube_id: KYb4QV5yzxU
+
 - title: Microcontrollers With CWRUbotix - Arduino and Beyond
   description: Adam talks about microcontrollers, starting with the ever-popular Arduino then moving on to the STM32 family of microcontrollers. Adam discusses practical considerations when designing custom hardware involving microcontrollers.
   category: hardware
