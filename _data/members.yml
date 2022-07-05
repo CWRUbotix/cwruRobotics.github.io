@@ -3,14 +3,14 @@
   position: President
   email: jic23@case.edu
   imgurl: res/members/JuliannaCarrerasPresident.jpg
-  bio: I'm a junior majoring in Mechanical Engineering and I've been on CWRUbotix for about 4 years on the MATE ROV mechanical team. I previously was the secretary for 1.5 years and vice president for a year. Aside from robotics, I'm very passionate about efficient and renewable energy-mainly windmills.
+  bio: I'm a junior majoring in mechanical engineering and I've been on CWRUbotix for about 4 years on the MATE ROV mechanical team. I am also the mechanical lead for our MATE ROV team this year and I previously served as secretary for 1.5 years and vice president for a year. Aside from robotics, I'm very passionate about efficient and renewable energy-mainly windmills.
 
 - name: Michael Carlstrom
   exec: true
   position: Vice President
   email: rmc170@case.edu
   imgurl: res/members/michael_carlstrom.png
-  bio: I’m a junior studying Computer Science with a specialization in Artificial Intelligence. While I am not in the robotics bay, I am found playing card and board games.
+  bio: I’m a junior studying computer science with a specialization in artificial intelligence. While I am not in the robotics bay, I am found playing card and board games.
 
 - name: Noah Mollerstuen
   exec: true
