@@ -35,7 +35,7 @@
 
 - name: MakerGear
   link: https://www.makergear.com/
-  image: res/sponsors/makergear_logo.jpg
+  image: res/sponsors/makergear-logo.png
   alt: MakerGear logo
 
 - name: M.A. Ford
@@ -49,7 +49,7 @@
   alt: SBG Systems Logo
 
 - name: TotalBoat
-  link: https://www.www.totalboat.com/
+  link: https://www.totalboat.com/
   image: res/sponsors/totalboat-logo.png
   alt: TotalBoat Logo
   
