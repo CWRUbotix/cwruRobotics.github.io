@@ -48,6 +48,11 @@
   image: res/sponsors/sbg_logo.svg
   alt: SBG Systems Logo
 
+- name: Pololu
+  link: https://www.pololu.com/
+  image: res/sponsors/pololu_logo_for_WEB_RGB_600x207.png
+  alt: Pololu Logo
+
 - name: TotalBoat
   link: https://www.totalboat.com/
   image: res/sponsors/totalboat-logo.png
