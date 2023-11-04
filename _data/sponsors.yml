@@ -3,20 +3,25 @@
   image: res/sponsors/caa.svg
   alt: Case Alumni Association crest
 
-- name: Kyocera-SGS
-  link: https://www.kyocera-sgstool.com/
-  image: res/sponsors/kyocera_sgs.png
-  alt: Kyocera and SGS logos
+- name: Teledyne FLIR
+  link: https://www.teledyne.com/
+  image: res/sponsors/teledyne-logo.jpg
+  alt: Teledyne logo
+
+#- name: Kyocera-SGS
+#  link: https://www.kyocera-sgstool.com/
+#  image: res/sponsors/kyocera_sgs.png
+#  alt: Kyocera and SGS logos
 
 - name: Gene Haas Grant
   link: https://ghaasfoundation.org
   image: https://ghaasfoundation.org/content/dam/haascnc/gene-haas-foundation/2021-logo-ghf/GHF_WebsiteHeaderLogo.svg
   alt: Gene Haas Foundation logo
 
-- name: Think[box]
+- name: think[box]
   link: https://thinkbox.case.edu
   image: res/sponsors/thinkbox.svg
-  alt: Think[box] logo
+  alt: think[box] logo
 
 - name: Undergraduate Student Government
   link: https://usg.case.edu
