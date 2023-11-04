@@ -10,7 +10,7 @@
   position: Vice President
   email: nrm98@case.edu
   imgurl: res/members/Noah.jpg
-  bio: Hi, I'm a junior studying computer science and control engineering. In addition to my work as secretary, I serve as team lead of the MATE ROV team. When I'm not building robots, I enjoy playing board games and cross-country skiing.
+  bio: Hi, I'm a junior studying computer science and control engineering. In addition to my work as VP, I serve as team lead of the MATE ROV team. When I'm not building robots, I enjoy playing board games and cross-country skiing.
 
 - name: Rucha Batchu
   exec: true
@@ -26,12 +26,12 @@
   imgurl: res/members/tyler.jpg
   bio: Hi! I'm a sophomore majoring in Polymer Science and Engineering with a minor in AI. This is my second year with CWRUbotix on the MATE ROV Software team, and my first year on exec. In addition to CWRUbotix, I am in Symphonic Winds where I play the clarinet, I sing with the Case Glee Club, and I'm the librarian for the Role-Playing Games Club.
 
-- name: Robin James
+- name: Toby Cowles
   exec: true
   position: Lab and Safety Manager
-  email: Rnj13@case.edu
-  imgurl: res/members/robin_james_l&s.JPG
-  bio: Hi, I am Robin, a rising Senior physics and computer science major. As well as being on the Robotics team for the past 3 years, I also do research in the development of cosmic ray detection.
+  email: tgc21@case.edu
+  imgurl: res/members/toby_cowles.jpg
+  bio: Hi. I'm Toby. A third year electrical and computer engineering major. In addition to lab and safety manager I am electrical lead for MATE-ROV. When not working on robotics I enjoy bike rides and baking.
 
 - name: Liv Gatchall
   exec: true
