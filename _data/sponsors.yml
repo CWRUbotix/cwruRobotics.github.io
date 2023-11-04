@@ -5,7 +5,7 @@
 
 - name: Teledyne FLIR
   link: https://www.teledyne.com/
-  image: res/sponsors/teledyne-logo.jpg
+  image: res/sponsors/teledyne-logo.png
   alt: Teledyne logo
 
 #- name: Kyocera-SGS
