@@ -17,8 +17,8 @@
   exec: true
   position: Secretary
   email: cld99@case.edu
-  imgurl: res/members/
-  bio: 
+  imgurl: res/members/ChristopherDanner_Secretary.jpg
+  bio: I am a third year computer science major pursuing minors in mathematics and finance. In CWRUbotix, I am a member of the software subteam of our Micromouse team, as well as our current secretary. Outside of CWRUbotix, I enjoy board games and participating in musical ensembles on campus.
 
 - name: Amitan Bar-Evan
   exec: true
@@ -31,7 +31,7 @@
   exec: true
   position: Lab and Safety Manager
   email: mar289@case.edu
-  imgurl: res/members/
+  imgurl: res/retired exec members/no_picture.jpg
   bio: 
 
 # - name: Liv Gatchall
