@@ -1,44 +1,45 @@
-- name: Michael Carlstrom
-  exec: true
-  position: President
-  email: rmc170@case.edu
-  imgurl: res/members/michael_carlstrom.png
-  bio: I’m a senior studying computer science with a specialization in artificial intelligence. While I am not in the robotics bay, I am found playing card and board games.
-
 - name: Noah Mollerstuen
   exec: true
-  position: Vice President
+  position: President
   email: nrm98@case.edu
-  imgurl: res/members/Noah.jpg
-  bio: Hi, I'm a junior studying computer science and control engineering. In addition to my work as VP, I serve as team lead of the MATE ROV team. When I'm not building robots, I enjoy playing board games and cross-country skiing.
+  imgurl: res/members/NoahMollerstuen_President.jpg
+  bio: I'm a senior studying computer science with a with a passion for intelligent robots. I lead CWRUbotix's MATE ROV team and I'm usually working on some kind of side project, be it a robot, supercharged nerf blaster, or Factorio world (I can stop whenever I want). I love talking about robotics, so feel free to come chat with me wherever you see me.
 
-- name: Rucha Batchu
+- name: Ari Glockner
+  exec: true
+  position: Vice President
+  email: ajg288@case.edu
+  imgurl: res/members/AriGlockner_VicePresident.png
+  bio: I'm a senior studying Computer Science. In addition to my duties as VP and Team Lead for Micromouse, I can often be found playing ultimate frisbee, working out, or playing board games. 
+
+
+- name: Christopher Danner
   exec: true
   position: Secretary
-  email: rpb89@case.edu
-  imgurl: res/members/rucha.jpg
-  bio: Hi! I'm a 4th year BS/MS student majoring in Mechanical Engineering with a specialization in Robotics. I've been on the team for "4" years and am also the mechanical lead for MATE ROV this year. Outside of robotics, I draw a webcomic, play Bloons tower defense and plot world domination.#NPSNorthwind100-21Edition-Fanclub.
+  email: cld99@case.edu
+  imgurl: res/members/
+  bio: 
 
-- name: Tyler Zupfer
+- name: Amitan Bar-Evan
   exec: true
   position: Treasurer
-  email: axm1554@case.edu
-  imgurl: res/members/tyler.jpg
-  bio: Hi! I'm a sophomore majoring in Polymer Science and Engineering with a minor in AI. This is my second year with CWRUbotix on the MATE ROV Software team, and my first year on exec. In addition to CWRUbotix, I am in Symphonic Winds where I play the clarinet, I sing with the Case Glee Club, and I'm the librarian for the Role-Playing Games Club.
+  email: alb278@case.edu
+  imgurl: res/members/AmitanBarEvan_Treasurer.png
+  bio: Hello! I am a second year studying primarily mechanical engineering with some CS and EE sprinkled in for extra flavor. When not working on the robot takeover, I can often be found playing board games or climbing trees.
 
-- name: Toby Cowles
+- name: Max Rollins
   exec: true
   position: Lab and Safety Manager
-  email: tgc21@case.edu
-  imgurl: res/members/toby_cowles.jpg
-  bio: Hi. I'm Toby. A third year electrical and computer engineering major. In addition to lab and safety manager I am electrical lead for MATE-ROV. When not working on robotics I enjoy bike rides and baking.
+  email: mar289@case.edu
+  imgurl: res/members/
+  bio: 
 
-- name: Liv Gatchall
-  exec: true
-  position: PR and Outreach Manager
-  email: org6@case.edu
-  imgurl: res/members/liv_PR.jpg
-  bio: Hello! :) I'm a fourth-year BS/MS Mechanical Engineering student specializing in robotics and manufacturing. This year will be my third year on the MATE ROV mechanical team and second as PR & Outreach Manager. Outside of robotics, I play guitar, Wizard101, and pet a lot of dogs.
+# - name: Liv Gatchall
+#   exec: true
+#   position: PR and Outreach Manager
+#   email: org6@case.edu
+#   imgurl: res/members/liv_PR.jpg
+#   bio: Hello! :) I'm a fourth-year BS/MS Mechanical Engineering student specializing in robotics and manufacturing. This year will be my third year on the MATE ROV mechanical team and second as PR & Outreach Manager. Outside of robotics, I play guitar, Wizard101, and pet a lot of dogs.
   
 - name: Dr. Richard Bachmann
   exec: false

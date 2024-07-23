@@ -50,7 +50,9 @@
 }
 
 .project img {
+	object-fit: contain;
 	height: 300px;
+	max-width: 300px;
 	opacity: 0.6;
     filter: alpha(opacity=60);
 	padding-bottom: 20;
