@@ -34,12 +34,12 @@
   imgurl: res/members/MaxRollis_LabAndSafety.jpg
   bio: I'm a senior studying mechanical engineering. When I'm not building robots, I enjoy playing chess and rock climbing.
 
-# - name: Liv Gatchall
+# - name: Ben Kwiatkowski
 #   exec: true
-#   position: PR and Outreach Manager
-#   email: org6@case.edu
-#   imgurl: res/members/liv_PR.jpg
-#   bio: Hello! :) I'm a fourth-year BS/MS Mechanical Engineering student specializing in robotics and manufacturing. This year will be my third year on the MATE ROV mechanical team and second as PR & Outreach Manager. Outside of robotics, I play guitar, Wizard101, and pet a lot of dogs.
+#   position: Super secret PR and Outreach Manager
+#   email: btk35@case.edu
+#   imgurl: 
+#   bio: I'm a fourth year studying electrical engineering and biomedical engineering and I help design electronics on the MATE ROV team. I like playing video games, especially Bloodborne.
   
 - name: Dr. Richard Bachmann
   exec: false

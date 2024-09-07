@@ -1,8 +1,10 @@
+# Good as of 2024
 - name: Case Alumni Association
   link: https://www.casealum.org/
   image: res/sponsors/caa.svg
   alt: Case Alumni Association crest
 
+# Good as of 2024
 - name: Teledyne FLIR
   link: https://www.teledyne.com/
   image: res/sponsors/teledyne-logo.png
@@ -13,30 +15,36 @@
 #  image: res/sponsors/kyocera_sgs.png
 #  alt: Kyocera and SGS logos
 
+# Remove
 - name: Gene Haas Grant
   link: https://ghaasfoundation.org
   image: https://ghaasfoundation.org/content/dam/haascnc/gene-haas-foundation/2021-logo-ghf/GHF_WebsiteHeaderLogo.svg
   alt: Gene Haas Foundation logo
 
+# Good as of 2024
 - name: think[box]
   link: https://thinkbox.case.edu
   image: res/sponsors/thinkbox.svg
   alt: think[box] logo
 
+# Good as of 2024
 - name: Undergraduate Student Government
   link: https://usg.case.edu
   image: res/sponsors/usg.png
   alt: Undergraduate Student Government logo
 
+# Good as of 2024
 - name: Solidworks
   link: https://www.solidworks.com/
   image: res/sponsors/solidworks.svg
   alt: Solidworks logo
 
+# Good as of 2024
 - name: Altium
   link: https://altium.com
   image: res/sponsors/altium.png
   alt: Altium logo
+
 
 - name: MakerGear
   link: https://www.makergear.com/
