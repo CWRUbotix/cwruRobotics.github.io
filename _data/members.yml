@@ -12,7 +12,6 @@
   imgurl: res/members/AriGlockner_VicePresident.png
   bio: I'm a senior studying Computer Science. In addition to my duties as VP and Team Lead for Micromouse, I can often be found playing ultimate frisbee, working out, or playing board games. 
 
-
 - name: Christopher Danner
   exec: true
   position: Secretary
@@ -31,15 +30,15 @@
   exec: true
   position: Lab and Safety Manager
   email: mar289@case.edu
-  imgurl: res/members/MaxRollis_LabAndSafety.jpg
+  imgurl: res/members/MaxRollins_LabAndSafety.jpg
   bio: I'm a senior studying mechanical engineering. When I'm not building robots, I enjoy playing chess and rock climbing.
 
-# - name: Ben Kwiatkowski
-#   exec: true
-#   position: Super secret PR and Outreach Manager
-#   email: btk35@case.edu
-#   imgurl: 
-#   bio: I'm a fourth year studying electrical engineering and biomedical engineering and I help design electronics on the MATE ROV team. I like playing video games, especially Bloodborne.
+- name: Ben Kwiatkowski
+  exec: true
+  position: PR and Outreach Manager
+  email: btk35@case.edu
+  imgurl: res/members/BenKwiatkowski_PRManager.jpg
+  bio: I'm a fourth year studying electrical engineering and biomedical engineering and I help design electronics on the MATE ROV team. In my free time, I like playing video games, especially Bloodborne.
   
 - name: Dr. Richard Bachmann
   exec: false
