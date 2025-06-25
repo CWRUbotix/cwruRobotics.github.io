@@ -44,6 +44,22 @@ a.anchor {
 	visibility: hidden;
 }
 
+.small-image {
+	max-width: min(50vw, 800px);
+	margin: 0 auto 0 auto;
+}
+
+.big-image {
+	max-width: min(80vw, 1200px);
+	margin: 0 auto 0 auto;
+}
+
+@media screen and (max-width: 400px) {
+	.small-image, .big-image {
+		max-width: 100%;
+	}
+}
+
 .division {
 	border: 0;
 	height: 1px;
@@ -51,6 +67,21 @@ a.anchor {
 	margin: 0 auto 30px auto;
 	background: #333;
 	background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+section {
+	max-width: min(1400px, 80%);
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+section.full-width {
+	max-width: 100%;
+}
+
+section > p {
+	text-align: left;
 }
 
 .content {
@@ -175,6 +206,10 @@ nav {
 	display: inline-block;
 	padding: 0.5em;
 	color: #045184;
+}
+
+#blog_index {
+	text-align: center;
 }
 
 @media screen and (max-width: 957px) {
