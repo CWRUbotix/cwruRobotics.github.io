@@ -1,3 +1,8 @@
+.banner {
+	max-width: 100vw;
+	margin: 0 auto 0 auto;
+}
+
 .member {
 	vertical-align: text-top;
 	display: inline-block;
@@ -35,7 +40,7 @@
 }
 
 .exec_board_cont {
-	max-width: 1200px;
+	max-width: min(1200px, 100%);
 	margin: 0 auto 40px auto;
 }
 
@@ -52,7 +57,7 @@
 .project img {
 	object-fit: contain;
 	height: 300px;
-	max-width: 300px;
+	max-width: min(300px, 100%);
 	opacity: 0.6;
     filter: alpha(opacity=60);
 	padding-bottom: 20;
@@ -78,7 +83,7 @@
 }
 
 .projects_cont {
-	max-width: 1400px;
+	max-width: min(1400px, 100%);
 	margin: 0 auto 0 auto;
 }
 
@@ -100,12 +105,12 @@
 }
 
 .sponsors_cont {
-	max-width: 1400px;
+	max-width: min(1400px, 100%);
 	margin: 0 auto 40px auto;
 }
 
 .rec_blog_cont {
-	max-width: 1400px;
+	max-width: 100%;
 	margin: 0 auto 0 auto;
 }
 
@@ -113,7 +118,7 @@
 	margin: 25px 50px;
 	display: inline-block;
 	vertical-align: top;
-	max-width: 400px;
+	max-width: min(400px, 100%);
 }
 
 .rec_blog a {
@@ -126,7 +131,6 @@
 	position: relative;
 	font-size: 28px;
 	text-align: center;
-	
 }
 
 .rec_blog_date {
@@ -134,7 +138,6 @@
 	position: relative;
 	font-size: 20px;
 	text-align: center;
-	
 }
 
 .rec_blog_text {
@@ -142,11 +145,10 @@
 	position: relative;
 	font-size: 16px;
 	text-align: justify;
-	
 }
 
 .rec_blog img {
-	max-width: 400px;
+	max-width: min(400px, 100%);
 	padding-bottom: 20;
 }
 
@@ -163,32 +165,6 @@
 	margin-right: 40px;
 	height: 300px;
 	margin-top: 40px;
-}
-
-#join_btn {
-	width: 300px;
-	height: 100px;
-	background:rgba(10,48,78,0.3);
-	position: absolute;
-	left: 50%;
-	margin-left: -150px;
-	color: black;
-	text-align: center;
-	transition: all .2s ease-in-out;
-	border-radius: 25px;
-}
-
-#join_btn:hover {
-	background:rgba(10,48,78,0.8);
-}
-
-#join_btn p {
-	color: black;
-	position: relative;
-	text-align: center;
-	font-size: 36px;
-	font-weight: bold;
-	margin: 26px 0
 }
 
 #members {
@@ -217,42 +193,57 @@
 	text-align: center;
 }
 
-#home {
-	position: relative;
-	width:100%;
-	overflow: hidden;
-}
-
-#home img {
-	min-width:100%;
-	min-height: 600px;
-	opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
 #motto {
 	font-size: 86px;
-	color: 000;
-	position: absolute;
-	min-width: 150px;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 2%;
 	text-align: center;
 	font-weight: bold;
+
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding: 0.5em;
+
+	background: linear-gradient( rgba(239, 239, 239, 0.6), rgba(239, 239, 239, 0.6) ),
+				#EFEFEF url("/res/home/banner.jpg") center / cover no-repeat;
 }
 
-a.btn {
-	padding:20px 30px;
-	width:300px;
-	height:100px;
-	text-decoration:none;
-	background-color:lightgrey;
-	font-size:24px;
-	color:black;
-	transition: all .2s ease-in-out;
+#motto p {
+	max-width: min(1200px, 100%);
+	margin: auto;
+	margin-bottom: 0.5em;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
 }
 
-a.btn:hover {
-	background-color:grey;
+@media screen and (max-width: 480px) {
+	#motto {
+		font-size: 15vw;
+	}
+}
+
+.line-highlight {
+	display: inline;
+	color: white;
+
+	/* Enable for by-line highlighting */
+	/* line-height: 1.5em;
+	background-color: rgba(0, 0, 0, 0.5); */
+}
+
+#join-link {
+	background: rgba(10, 48, 78, 0.7);
+	color: white;
+	text-align: center;
+	transition: background-color .2s ease-in-out;
+	border-radius: 15px;
+	position: relative;
+	display: block;
+	width: fit-content;
+	margin: auto;
+	text-decoration: none;
+	padding: 0.2em;
+}
+
+#join-link:hover {
+	background-color: rgba(10, 48, 78, 0.9);
 }
