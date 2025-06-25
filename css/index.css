@@ -211,13 +211,23 @@
 	max-width: min(1200px, 100%);
 	margin: auto;
 	margin-bottom: 0.5em;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+}
+
+@media screen and (max-width: 480px) {
+	#motto {
+		font-size: 15vw;
+	}
 }
 
 .line-highlight {
 	display: inline;
-	line-height: 1.5em;
-	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
+
+	/* Enable for by-line highlighting */
+	/* line-height: 1.5em;
+	background-color: rgba(0, 0, 0, 0.5); */
 }
 
 #join-link {
@@ -225,7 +235,7 @@
 	color: white;
 	text-align: center;
 	transition: background-color .2s ease-in-out;
-	border-radius: 25px;
+	border-radius: 15px;
 	position: relative;
 	display: block;
 	width: fit-content;
