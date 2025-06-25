@@ -6,29 +6,35 @@ stylesheets : [index]
 ---
 
 <a class="anchor" id="main"></a>
-<div id="motto">
+<section id="motto">
   <p>
     <span class="line-highlight">WE BUILD ROBOTS BECAUSE ROBOTS ARE AWESOME</span>
   </p>
   <a href="join.html" id="join-link">
     Join Us!
   </a>
-</div>
+</section>
 
 <a class="anchor" id="team"></a>
-<div id="members">
-  <p class="hd">About The Team</p>
+<section id="team">
+  <h1>About The Team</h1>
   <div class="division"></div>
-  <p style="font-size:24px;max-width:1000px;margin:0 auto 70px auto;">We are CWRUbotix, Case Western Reserve University’s robotics club.
-  We like long walks on the beach (with robots), designing and building
-  robots for a variety of robotics competitions, and engaging with the
-  local STEM community. Our primary goal is to provide a learning environment
-  for students interested in robotics, regardless of prior experience.
-  We focus on teaching our members technical skills such as CAD modeling,
-  circuit design, programming, and manufacturing. Currently we attend the MATE ROV competition and an assortment of National Robotics
-  Challenges. </p>
+  <p class="text-block center">
+    We are CWRUbotix, Case Western Reserve University's robotics club.
+    We like long walks on the beach (with robots), designing and building
+    robots for a variety of robotics competitions, and engaging with the
+    local STEM community. Our primary goal is to provide a learning environment
+    for students interested in robotics, regardless of prior experience.
+    We focus on teaching our members technical skills such as CAD modeling,
+    circuit design, programming, and manufacturing. Currently we attend the
+    MATE ROV competition and an assortment of National Robotics
+    Challenges.
+  </p>
   <img src="res/full_team/team_full_2021_2022.jpg" class="big-image"/>
-  <p class="hd">Executive Board</p>
+</section>
+
+<section id="members">
+  <h1>Executive Board</h1>
   <div class="division" style="margin-bottom:30px"></div>
   <div class="exec_board_cont">
     {% include member_tiles.html %}
@@ -37,11 +43,11 @@ stylesheets : [index]
     Learn more about our executive board <a href="members.html#exec">here</a>.
     </p>
   </div>
-</div>
+</section>
 
 <a class="anchor" id="projects"></a>
-<div id="whatwedo">
-  <p class="hd">Projects</p>
+<section id="whatwedo">
+  <h1>Projects</h1>
   <div class="division"></div>
   <div class="projects_cont">
    <!--
@@ -53,59 +59,64 @@ stylesheets : [index]
     </div> -->
     <div class="project">
       <a href="mate_rov.html">
-        <img src="res/mate_rov/ROV_24.jpg"/>
+        <img src="res/mate_rov/ROV_24.jpg" class="hoverable-image"/>
         <div class="project_txt"><b>MATE ROV Competition</b></div>
       </a>
     </div>
     <div class="project">
       <a href="nrc.html">
-        <img src="res/nrc/nrc.png"/>
+        <img src="res/nrc/nrc.png" class="hoverable-image"/>
         <div class="project_txt"><b>National Robotics Challenge</b></div>
       </a>
     </div>
     <div class="project">
       <a href="bootcamp.html">
-        <img src="res/bootcamp/bootcamp.jpg"/>
+        <img src="res/bootcamp/bootcamp.jpg" class="hoverable-image"/>
         <div class="project_txt"><b>Member Education Bootcamp</b></div>
       </a>
     </div>
   </div>
-</div>
+</section>
 
 <!-- RECENT BLOG TILE -->
 <a class="anchor" id="blog"></a>
-<div id="blog_index">
-  <p class="hd">Blog</p>
+<section id="blog_index">
+  <h1>Blog</h1>
   <div class="division"></div>
-  {% include recent_blog_tile.html %}
   <div class="rec_blog_cont">
+    <div class="rec_blog">
+      <a class="rec_blog_link" href="{{site.categories.blog[0].url}}">
+        <p class="rec_blog_title">{{site.categories.blog[0].title}}</p>
+        <p class="rec_blog_date"></p>
+        <img class="rec_blog_img hoverable-image" src="{{site.categories.blog[0].imgurl}}"/>
+        <p class="rec_blog_text">{{site.categories.blog[0].subhead}}</p>
+      </a>
+    </div>
     <a href="/blogs.html">
       <p class="rec_blog_title">
         View All Blog Posts
       </p>
     </a>
   </div>
-</div>
+</section>
 
 <!-- SPONSORSHIP -->
 <a class="anchor" id="sponsorship"></a>
-<div id="sponsors">
-  <p class="hd">Sponsors</p>
+<section id="sponsors">
+  <h1>Sponsors</h1>
   <div class="division"></div>
   <div class="sponsors_cont">
 
     {% for sponsor in site.data.sponsors %}
-    <div class="sponsor">
-      <a href="{{sponsor.link}}" target="_blank">
-        <img style="width: 200px;" src="{{sponsor.image}}" alt="{{sponsor.alt}}">
-      </a>
-    </div>
+    <a href="{{sponsor.link}}" target="_blank" class="sponsor">
+      <img src="{{sponsor.image}}" alt="{{sponsor.alt}}" class="hoverable-image">
+    </a>
     {% endfor %}
 
   </div>
-  <a class="btn" href="sponsorship.html">
+  <a href="sponsorship.html">
     Interested in sponsoring?
   </a>
-</div>
+</section>
 
 <a class="anchor" id="contact"></a>

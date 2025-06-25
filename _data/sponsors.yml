@@ -18,7 +18,7 @@
 # Remove
 - name: Gene Haas Grant
   link: https://ghaasfoundation.org
-  image: https://ghaasfoundation.org/content/dam/haascnc/gene-haas-foundation/2021-logo-ghf/GHF_WebsiteHeaderLogo.svg
+  image: res/sponsors/gene_haas.png
   alt: Gene Haas Foundation logo
 
 # Good as of 2024

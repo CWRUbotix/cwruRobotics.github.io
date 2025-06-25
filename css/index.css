@@ -3,6 +3,17 @@
 	margin: 0 auto 0 auto;
 }
 
+.hoverable-image:hover {
+	opacity: 0.7;
+	transition: opacity .2s ease-in-out;
+}
+
+#team-description {
+	font-size: 24px;
+	max-width: 1000px;
+	margin: 0 auto 70px auto;
+}
+
 .member {
 	vertical-align: text-top;
 	display: inline-block;
@@ -27,16 +38,8 @@
 
 .member img {
 	height: 200px;
-	opacity: 0.6;
-    opacity: 1.0;
 	padding-bottom: 20;
-	transition: all .2s ease-in-out;
 	border-radius: 50%;
-}
-
-.member img:hover {
-	opacity: 1;
-    opacity: 0.7;
 }
 
 .exec_board_cont {
@@ -58,15 +61,7 @@
 	object-fit: contain;
 	height: 300px;
 	max-width: min(300px, 100%);
-	opacity: 1.0;
-    filter: alpha(opacity=60);
 	padding-bottom: 20;
-	transition: all .2s ease-in-out;
-}
-
-.project img:hover {
-	opacity: 1;
-    opacity: 0.7;
 }
 
 .project a {
@@ -91,17 +86,11 @@
 	margin: 25px 50px;
 	display: inline-block;
 	vertical-align: middle;
+	width: 200px;
 }
 
 .sponsor img {
-	opacity: 0.6;
-    filter: alpha(opacity=60);
-	transition: all .2s ease-in-out;
-}
-
-.sponsor img:hover {
-	opacity: 1;
-    filter: alpha(opacity=100);
+	width: 100%;
 }
 
 .sponsors_cont {
@@ -167,39 +156,20 @@
 	margin-top: 40px;
 }
 
-#members {
-	width: 100%;
-	text-align: center;
-}
-
-#whatwedo {
-	width: 100%;
-	text-align: center;
-}
-
-#sponsors {
-	width: 100%;
-	text-align: center;
-}
-
-#blog_index {
+section {
 	width: 100%;
 	text-align: center;
 }
 
 #partners {
 	margin-top: 100px;
-	width: 100%;
-	text-align: center;
 }
 
 #motto {
 	font-size: 86px;
-	text-align: center;
 	font-weight: bold;
 
 	position: relative;
-	width: 100%;
 	overflow: hidden;
 	padding: 1em 0.5em 1em 0.5em;
 
@@ -213,6 +183,7 @@
 	margin-bottom: 0.5em;
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 15px;
+	padding: 0.3em;
 }
 
 @media screen and (max-width: 480px) {

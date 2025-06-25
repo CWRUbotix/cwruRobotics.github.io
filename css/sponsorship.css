@@ -1,20 +1,15 @@
 p {
-    font-size: 20px;
-  }
-  
-  #top {
-    margin-top: 135px;
-  }
-  
-  .content {
-    max-width: 80%;
-  }
-  
-  .content embed {
-    position: relative;
-    margin: 0;
-    left: 50%;
-    transform: translate(-50%);
-    max-width: 80%
-  }
-  
+  font-size: 20px;
+}
+
+.content {
+  max-width: 80%;
+}
+
+.content embed {
+  position: relative;
+  margin: 0;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 80%
+}
