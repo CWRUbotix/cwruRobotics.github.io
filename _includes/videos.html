@@ -2,7 +2,12 @@
     <div style="text-align:center;">
         <h2>{{video.date}}</h2>
         <div>
-            <iframe style="vertical-align: top;" width="560" height="315" src="https://www.youtube.com/embed/{{video.youtube_id}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe loading="lazy" style="vertical-align: top;"
+                    width="560" height="315"
+                    src="https://www.youtube.com/embed/{{video.youtube_id}}"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
 
             <p style="display: inline-block; width: 30%; vertical-align: top; margin: 0 2%; text-align: left; font-size: 1.25em;">{{video.description}}</p>
         </div>
