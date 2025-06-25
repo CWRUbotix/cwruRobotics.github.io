@@ -29,7 +29,7 @@ window.addEventListener('scroll', () => {
 	}
 });
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	// TODO: Why the heck do we not start at the top of the page?
 	window.scroll(0, 0);
 });
