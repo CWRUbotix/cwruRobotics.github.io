@@ -2,13 +2,12 @@
 layout: default
 stylesheets : [members]
 ---
-<div class="topspace"></div>
 
 <div id="members">
     <a class="anchor" id="exec"></a>
-    <p class="hd">Executive Board Biographies</p>
+    <h1>Executive Board Biographies</h1>
     <div class="division"></div>
-    <p class="info">
+    <p class="text-block">
         {% for member in site.data.members %}
         {% if member.exec %}
         <div class="member">

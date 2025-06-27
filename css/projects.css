@@ -14,14 +14,6 @@
 	transform: scale(1.1);
 }
 
-.info {
-	text-align: left;
-	font-size: 24px;
-	max-width: 1000px;
-	margin: 30px auto 40px auto;
-}
-
-
 .subproj_cont {
 	max-width: 1400px;
 	margin: 20px auto 0 auto;
