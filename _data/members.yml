@@ -1,44 +1,44 @@
-- name: Noah Mollerstuen
+- name: Amitan Bar-Evan
   exec: true
   position: President
-  email: nrm98@case.edu
-  imgurl: res/members/NoahMollerstuen_President.jpg
-  bio: I'm a senior studying computer science with a with a passion for intelligent robots. I lead CWRUbotix's MATE ROV team and I'm usually working on some kind of side project, be it a robot, supercharged nerf blaster, or Factorio world (I can stop whenever I want). I love talking about robotics, so feel free to come chat with me wherever you see me.
+  email: alb278@case.edu
+  imgurl: res/members/AmitanBarEvan_President.png
+  bio: Hello! I am a third year studying primarily mechanical engineering with some CS and EE sprinkled in for extra flavor. When not working on the robot takeover, I can often be found playing board games or climbing trees.
 
-- name: Ari Glockner
+- name: Lucas Benson
   exec: true
   position: Vice President
-  email: ajg288@case.edu
-  imgurl: res/members/AriGlockner_VicePresident.png
-  bio: I'm a senior studying Computer Science. In addition to my duties as VP and Team Lead for Micromouse, I can often be found playing ultimate frisbee, working out, or playing board games. 
+  email: lab234@case.edu
+  imgurl: res/members/LucasBenson_VicePresident.png
+  bio: I'm a sophomore with a major in electrical engineering. I am the team lead in micromouse. When I am not at robotics, I can probably be found working with the CWRU Film Society.
 
 - name: Christopher Danner
   exec: true
   position: Secretary
   email: cld99@case.edu
   imgurl: res/members/ChristopherDanner_Secretary.jpg
-  bio: I am a third year computer science major pursuing minors in mathematics and finance. In CWRUbotix, I am a member of the software subteam of our Micromouse team, as well as our current secretary. Outside of CWRUbotix, I enjoy board games and participating in musical ensembles on campus.
+  bio: I am a fourth-year computer science BS/MS student with minors in mathematics and finance. In CWRUbotix, I am the software subteam lead for our Micromouse team, as well as our current secretary. Outside of CWRUbotix, I enjoy board games and reading.
 
-- name: Amitan Bar-Evan
+- name: Benjamin Mellick
   exec: true
   position: Treasurer
-  email: alb278@case.edu
-  imgurl: res/members/AmitanBarEvan_Treasurer.png
-  bio: Hello! I am a second year studying primarily mechanical engineering with some CS and EE sprinkled in for extra flavor. When not working on the robot takeover, I can often be found playing board games or climbing trees.
+  email: brm92@case.edu
+  imgurl: res/members/BenjaminMellick_Treasurer.png
+  bio: "This is the story of a man named Benjamin. Benjamin studied at a university in the physics building where he was Engineering Physics major #12. Benjamin's job was simple: he studied physics at his desk in his room and played music in the campus symphony from time to time. When the time came and he was free, Benjamin would go to his dorm room where he would sit in front of a monitor and play games like Deep Rock Galactic. Benjamin relished every moment of his life, as though he had designed it precisely for himself. And Benjamin was happy."
 
-- name: Max Rollins
+- name: Olivia Fietkiewicz
   exec: true
   position: Lab and Safety Manager
-  email: mar289@case.edu
-  imgurl: res/members/MaxRollins_LabAndSafety.jpg
-  bio: I'm a senior studying mechanical engineering. When I'm not building robots, I enjoy playing chess and rock climbing.
+  email: oxf36@case.edu
+  imgurl: res/members/OliviaFietkiewicz_LabAndSafety.png
+  bio: Hi! I'm a third-year student majoring in mechanical engineering and music. Outside of CWRUbotix I enjoy playing flute in a variety of ensembles and doing nonograms.
 
-- name: Ben Kwiatkowski
+- name: Josh Kim
   exec: true
   position: PR and Outreach Manager
-  email: btk35@case.edu
-  imgurl: res/members/BenKwiatkowski_PRManager.jpg
-  bio: I'm a fourth year studying electrical engineering and biomedical engineering and I help design electronics on the MATE ROV team. In my free time, I like playing video games, especially Bloodborne.
+  email: jpk126@case.edu
+  imgurl: res/members/JoshKim_PRManager.png
+  bio: I'm a third-year electrical engineering student, and I help design electronics for the MATE ROV team. Outside of robots, I enjoy practicing instruments and playing soccer.
   
 - name: Dr. Richard Bachmann
   exec: false
