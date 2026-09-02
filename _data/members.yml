@@ -1,44 +1,44 @@
-- name: Amitan Bar-Evan
-  exec: true
-  position: President
-  email: alb278@case.edu
-  imgurl: res/members/AmitanBarEvan_President.png
-  bio: Hello! I am a third year studying primarily mechanical engineering with some CS and EE sprinkled in for extra flavor. When not working on the robot takeover, I can often be found playing board games or climbing trees.
-
 - name: Lucas Benson
   exec: true
-  position: Vice President
+  position: President
   email: lab234@case.edu
   imgurl: res/members/LucasBenson_VicePresident.png
-  bio: I'm a sophomore with a major in electrical engineering. I am the team lead in micromouse. When I am not at robotics, I can probably be found working with the CWRU Film Society.
-
-- name: Christopher Danner
-  exec: true
-  position: Secretary
-  email: cld99@case.edu
-  imgurl: res/members/ChristopherDanner_Secretary.jpg
-  bio: I am a fourth-year computer science BS/MS student with minors in mathematics and finance. In CWRUbotix, I am the software subteam lead for our Micromouse team, as well as our current secretary. Outside of CWRUbotix, I enjoy board games and reading.
+  bio: I'm a junior with a major in electrical engineering. I am the team lead in micromouse. When I am not at robotics, I can probably be found working with the CWRU Film Society.
 
 - name: Benjamin Mellick
   exec: true
-  position: Treasurer
+  position: Vice President
   email: brm92@case.edu
   imgurl: res/members/BenjaminMellick_Treasurer.png
   bio: "This is the story of a man named Benjamin. Benjamin studied at a university in the physics building where he was Engineering Physics major #12. Benjamin's job was simple: he studied physics at his desk in his room and played music in the campus symphony from time to time. When the time came and he was free, Benjamin would go to his dorm room where he would sit in front of a monitor and play games like Deep Rock Galactic. Benjamin relished every moment of his life, as though he had designed it precisely for himself. And Benjamin was happy."
-
-- name: Olivia Fietkiewicz
+  
+- name: Shannon Griswold
+  exec: true
+  position: Secretary
+  email: svg33@case.edu
+  imgurl: res/members/.jpg
+  bio: 
+  
+- name: Avery Twomey
+  exec: true
+  position: Treasurer
+  email: dmt90@case.edu
+  imgurl: res/members/.png
+  bio: 
+  
+- name: Kiran Sah
   exec: true
   position: Lab and Safety Manager
-  email: oxf36@case.edu
-  imgurl: res/members/OliviaFietkiewicz_LabAndSafety.png
-  bio: Hi! I'm a third-year student majoring in mechanical engineering and music. Outside of CWRUbotix I enjoy playing flute in a variety of ensembles and doing nonograms.
-
-- name: Josh Kim
+  email: kms382@case.edu
+  imgurl: res/members/.png
+  bio: 
+  
+- name: Yuan Dong
   exec: true
   position: PR and Outreach Manager
-  email: jpk126@case.edu
-  imgurl: res/members/JoshKim_PRManager.png
-  bio: I'm a third-year electrical engineering student, and I help design electronics for the MATE ROV team. Outside of robots, I enjoy practicing instruments and playing soccer.
+  email: ybd2@case.edu
+  imgurl: res/members/.png
+  bio: I'm a second-year electrical engineering and physics student, and I help design electronics for the MATE ROV team. I'm really interested in embedded systems, and I'm also leading the avionics team on the Case Liquid Propulsion Team. Outside of school, I enjoy playing soccer and pickleball, and if time permits, playing piano.
   
 - name: Dr. Richard Bachmann
   exec: false
