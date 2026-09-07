@@ -9,35 +9,35 @@
   exec: true
   position: Vice President
   email: brm92@case.edu
-  imgurl: res/members/BenjaminMellick_Treasurer.png
-  bio: "This is the story of a man named Benjamin. Benjamin studied at a university in the physics building where he was Engineering Physics major #12. Benjamin's job was simple: he studied physics at his desk in his room and played music in the campus symphony from time to time. When the time came and he was free, Benjamin would go to his dorm room where he would sit in front of a monitor and play games like Deep Rock Galactic. Benjamin relished every moment of his life, as though he had designed it precisely for himself. And Benjamin was happy."
-  
+  imgurl: res/members/Benjamin_Mellick.jpg
+  bio: Benjamin Mellick is a fourth year Engineering Physics student focusing on Electrical Engineering. He's been on the robotics team since freshman year as a part of MATE ROV. He also loves music and plays upright bass in his free time!
+
 - name: Shannon Griswold
   exec: true
   position: Secretary
   email: svg33@case.edu
-  imgurl: res/members/.jpg
-  bio: 
+  imgurl: res/members/Shannon_Griswold.JPG
+  bio: I'm a fourth-year student majoring in computer science. I am the software subteam lead for our MATE ROV team. Outside of robotics, I enjoy figure skating and doing crafts such as crochet and needlepoint.
   
 - name: Avery Twomey
   exec: true
   position: Treasurer
   email: dmt90@case.edu
-  imgurl: res/members/.png
-  bio: 
+  imgurl: res/members/Avery_Twomey.jpg
+  bio: I am Avery Twomey, a second year undergraduate student at Case Western Reserve University studying Mechanical Engineering and Computer Science. I have been participating in robotics competitions for about 6 years now and plan to go into the robotics industry when I graduate.
   
 - name: Kiran Sah
   exec: true
   position: Lab and Safety Manager
   email: kms382@case.edu
-  imgurl: res/members/.png
-  bio: 
+  imgurl: res/members/Kiran_Sah.jpg
+  bio: Hi! I'm a third year mechanical engineering student. I'm also the team lead for the MATE ROV team. Along with robotics, I play the oboe and have an interest in theater.
   
 - name: Yuan Dong
   exec: true
   position: PR and Outreach Manager
   email: ybd2@case.edu
-  imgurl: res/members/.png
+  imgurl: res/members/Yuan_Dong.png
   bio: I'm a second-year electrical engineering and physics student, and I help design electronics for the MATE ROV team. I'm really interested in embedded systems, and I'm also leading the avionics team on the Case Liquid Propulsion Team. Outside of school, I enjoy playing soccer and pickleball, and if time permits, playing piano.
   
 - name: Dr. Richard Bachmann
